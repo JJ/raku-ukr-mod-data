@@ -1,14 +1,17 @@
-# Raku Distribution Template
+# Using Raku to scrape and analyze Ukraine Ministry of Defense Data
 
-Template for Raku modules, classes, roles, to be distributed as a
-single package in the ecosystem. Fill this README with your
-instructions.
+News about combat losses of the Russian invaders are periodically published 
+by the [Ukraininan minister of Defense](https://www.mil.gov.ua/en/news/) 
+This is a [Raku](https://raku.org) module that extracts information from 
+those pages, for instance [this one](https://www.mil.gov.
+ua/en/news/2022/06/05/the-total-combat-losses-of-the-enemy-from-24-02-to-05-06/).
+
+> Note: the English one is updated less frequently than the [Ukrainian one](https://www.mil.gov.ua/news/2022/06/08/vid-pochatku-povnomasshtabnoi-vijni-proti-ukraini-rosiya-vtratila-uzhe-1393-tanki-znishheno-703-artilerijskih-sistemi-voroga-%E2%80%93-generalnij-shtab-zs-ukraini/)
+> At least there's a 2 day delay. I can't figure the later, unfortunately
 
 ## Installing
 
-
-<-- Fill your prerequisites here, how to install using zef, how to
-install from source -->
+Clone this repo or install via `zef`
 
 ## Running
 
@@ -19,5 +22,6 @@ install from source -->
 <-- Related stuff -->
 
 ## License
-<-- 
-This module will be licensed, by default, under the Artistic 2.0 License (the same as Raku itself). You can change it by using a different LICENSE file, as well as changing the license field in META6.json -->
+- 
+This module is licensed under the Artistic 2.0 License (the same as Raku 
+itself). See [LICENSE](LICENSE) for terms.
