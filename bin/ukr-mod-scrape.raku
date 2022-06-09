@@ -5,9 +5,11 @@ my $file-name = @*ARGS[0] // "example.html";
 my @losses-lines = $file-name.IO.lines.grep: /^"<p>".+"</p>"/ ;
 
 for @losses-lines.grep: /"‒"/ -> $l {
-    $l ~~ /"<p>" $<concept> = (.+?) \s* "‒"/;
-    my $numbers = $l ~~ /(\d+) \s+ \( "+" (\d+) /;
-    say $<concept>, $numbers;
+    my $match = $l ~~ /'p>'
+        $<concept> = [ .+ ] \s+ '‒' \s+
+        $<total> = [\d+]\s+ \( "+"
+        $<delta> = [\d+] /;
+    say $match;
 }
 
 
