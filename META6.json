@@ -11,13 +11,17 @@
     "Test",
     "Test::META"
   ],
-  "provides": {},
+  "provides": {
+    "Data::UkraineWar::MoD::Daily": "lib/Data/UkraineWar/MoD/Daily.pm6"
+  },
   "resources": [
     ".resources_files_go_here"
   ],
   "license": "Artistic-2.0",
   "tags": [
-    "modules","template","test"
+    "modules",
+    "template",
+    "test"
   ],
   "source-url": ""
 }
