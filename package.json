@@ -1,0 +1,30 @@
+{
+  "name": "raku-ukr-mod-data",
+  "version": "1.0.0",
+  "description": "News about combat losses of the Russian invaders are periodically published  by the [Ukraininan minister of Defense](https://www.mil.gov.ua/en/news/)  This is a [Raku](https://raku.org) module that extracts information from  those pages, for instance [this one](https://www.mil.gov. ua/en/news/2022/06/05/the-total-combat-losses-of-the-enemy-from-24-02-to-05-06/).",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JJ/raku-ukr-mod-data.git"
+  },
+  "keywords": [
+    "scraping",
+    "Ukraine",
+    "data"
+  ],
+  "author": "JJ Merelo",
+  "license": "Artistic-2.0",
+  "bugs": {
+    "url": "https://github.com/JJ/raku-ukr-mod-data/issues"
+  },
+  "homepage": "https://github.com/JJ/raku-ukr-mod-data#readme",
+  "dependencies": {
+    "puppeteer": "^14.3.0"
+  }
+}

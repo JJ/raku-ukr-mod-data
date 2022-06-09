@@ -1,4 +1,4 @@
-use LWP::Simple;
+use WebDriver;
 
 sub scrape( @lines ) is export {
     my @losses-lines = @lines.grep: /^"<p>".+"</p>"/ ;
@@ -14,6 +14,7 @@ sub scrape( @lines ) is export {
               delta => ~$match{'delta'}
         };
     }
+    return %data;
 }
 unit class Data::UkraineWar::MoD::Daily;
 
@@ -24,11 +25,18 @@ proto new(|) {*}
 
 submethod BUILD( :%!data, :$!date) {}
 
-multi method new( $URI where /^https:/, $date = now  ) {
-    self.bless( :$date, data => scrape(LWP::Simple.get($URI).split("\n")) );
+multi method new( $URI where /^https:/, $date = DateTime.now  ) {
+    my $wd = WebDriver.new:
+        :4444port,
+        :capabilities(
+            :alwaysMatch('moz:firefoxOptions' => :args('-headless',))
+        );
+    $wd.get: "https://raku.org";
+    say $wd.find("p");
+#    self.bless( :$date, data => scrape($page.split("\n")) );
 }
 
-multi method new( $uri, $date = now,) {
+multi method new( $uri, $date = DateTime.now,) {
     self.bless( :$date, data => scrape($uri.IO.lines) );
 }
 
