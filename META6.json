@@ -4,9 +4,13 @@
   "version": "0.0.1",
   "perl": "6.d",
   "meta-version": 1,
-  "authors": [],
+  "authors": [
+    "JJ Merelo"
+  ],
   "auth": "",
-  "depends": [],
+  "depends": [
+    "LWP::Simple"
+  ],
   "test-depends": [
     "Test",
     "Test::META"
