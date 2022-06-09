@@ -5,12 +5,13 @@ sub scrape( @lines ) is export {
     my %data;
     for @losses-lines.grep: /"‒"/ -> $l {
         my $match = $l ~~ /'p>'
-            $<concept> = [ .+ ] \s+ '‒' \s+
+            $<concept> = [ .+ ] \s+ '‒' \s+ \w* \s*
             $<total> = [\d+]\s+ \( "+"
             $<delta> = [\d+] /;
-        %data{$match{'concept'}} = {
-              total => $match{'total'},
-              delta => $match{'delta'}
+        warn "«$l» can't be properly parsed" unless $match{'concept'};
+        %data{~$match{'concept'}} = {
+              total => ~$match{'total'},
+              delta => ~$match{'delta'}
         };
     }
 }
@@ -21,10 +22,16 @@ has DateTime $!date;
 
 proto new(|) {*}
 
+submethod BUILD( :%!data, :$!date) {}
+
 multi method new( $URI where /^https:/, $date = now  ) {
-    self.bless( :$date, data => LWP::Simple.get($URI).split("\n") );
+    self.bless( :$date, data => scrape(LWP::Simple.get($URI).split("\n")) );
 }
 
 multi method new( $uri, $date = now,) {
-    self.bless( :$date, data => $uri.IO.lines );
+    self.bless( :$date, data => scrape($uri.IO.lines) );
+}
+
+method data() {
+    return %!data;
 }
