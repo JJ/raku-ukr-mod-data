@@ -14,6 +14,7 @@
     "Test::META"
   ],
   "provides": {
+    "Data::UkraineWar::MoD": "lib/Data/UkraineWar/MoD.pm6",
     "Data::UkraineWar::MoD::Daily": "lib/Data/UkraineWar/MoD/Daily.pm6"
   },
   "resources": [
