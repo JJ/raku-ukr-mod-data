@@ -3,13 +3,15 @@ sub scrape( @lines ) is export {
     my %data;
     for @losses-lines.grep: /"‒"|"–"|"-"/ -> $l {
         my $match = $l ~~ /'p>'
-            $<concept> = [ .+ ] \s+ ['‒'|'–'|'-'] \s+ \w* \s*
-            $<total> = [\d+]\s+ \( "+"
-            $<delta> = [\d+] /;
-        warn "«$l» can't be properly parsed" unless $match{'concept'};
+            $<concept> = [ .+ ] \s+ ['‒'|'–'|'-'] \s* \w* \s*
+            $<total> = [\d+][\s+ \( "+"
+            $<delta> = [\d+]]? /;
+        warn " ⚠️ «$l» can't be properly parsed" unless $match{'concept'};
+        warn " ⚠️ «$l» has problems with numbers" unless $match{'total'};
+        next unless $match{'concept'} and $match{'total'};
         %data{~$match{'concept'}} = {
               total => ~$match{'total'},
-              delta => ~$match{'delta'}
+              delta => $match{'delta'} ??  $match{'delta'} !! 0;
         };
     }
     return %data;
@@ -17,16 +19,19 @@ sub scrape( @lines ) is export {
 unit class Data::UkraineWar::MoD::Daily;
 
 has %!data;
-has DateTime $!date;
+has $!date;
 
 proto new(|) {*}
 
 submethod BUILD( :%!data, :$!date) {}
 
-multi method new( $uri, $date = DateTime.now,) {
+multi method new( $uri where .IO.e, $date = DateTime.now,) {
     self.bless( :$date, data => scrape($uri.IO.lines) );
 }
 
+multi method new( $str, $date = DateTime.now,) {
+    self.bless( :$date, data => scrape($str.lines) );
+}
 method data() {
     return %!data;
 }

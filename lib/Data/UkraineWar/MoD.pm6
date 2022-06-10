@@ -5,13 +5,17 @@ unit class Data::UkraineWar::MoD;
 has %!data;
 
 method new( $directory ) {
+    my %data;
     for dir( $directory, test => { /\.html$/ }) -> $file {
         my $content = $file.slurp;
-        if ( $content !~~ / "<p>APV ‒ "/ ) {
+        if ( $content !~~ / "<p>APV"/ ) {
             say "{$file.path} does not contain combat losses data";
         } else {
-            my $daily =  Data::UkraineWar::MoD::Daily( $file.path );
-            say $daily.data();
+            say "{$file.path} contains data";
+            $file ~~ /$<date> = [\d+\.\d+] \s+ \|/;
+            my $daily =  Data::UkraineWar::MoD::Daily( $content, ~$<date> );
+            %data{~$<date>} = $daily;
         }
     }
+    self.bless( :%data );
 }
