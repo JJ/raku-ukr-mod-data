@@ -8,9 +8,7 @@
     "JJ Merelo"
   ],
   "auth": "",
-  "depends": [
-    "LWP::Simple"
-  ],
+  "depends": [],
   "test-depends": [
     "Test",
     "Test::META"

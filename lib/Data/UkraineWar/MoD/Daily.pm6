@@ -1,5 +1,3 @@
-use WebDriver;
-
 sub scrape( @lines ) is export {
     my @losses-lines = @lines.grep: /^"<p>".+"</p>"/ ;
     my %data;
