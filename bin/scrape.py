@@ -7,15 +7,16 @@ import random
 driver = uc.Chrome(
     driver_executable_path='/opt/google/chrome/chromedriver', headless=True
 )
-days = {"02": [28],
-        "03": [i for i in range(1, 31)],
-        "04": [i for i in range(1, 30)],
-        "05": [i for i in range(1, 26)]
-        }
+days = {
+    "05": [i for i in range(26, 1, -1)],
+    "04": [i for i in range(30, 1, -1)],
+    "03": [i for i in range(31, 1, -1)],
+    "02": [i for i in range(28, 25, -1)],
+}
 
 for month in days:
     for day in days[month]:
-        url = f'https://www.mil.gov.ua/en/news/2022/05/25/the-total-combat-losses-of-the-enemy-from-24-02-to-{day}-{month}/'
+        url = f'https://www.mil.gov.ua/en/news/2022/{month}/{day}/the-total-combat-losses-of-the-enemy-from-24-02-to-{day}-{month}/'
         print("⬇️ Download " + url)
         driver.get(url)
         filename = f'raw-pages/The total combat losses of the enemy from 24.02 to {day}.{month} | Міноборони.html'
