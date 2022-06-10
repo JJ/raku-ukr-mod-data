@@ -3,9 +3,9 @@ use WebDriver;
 sub scrape( @lines ) is export {
     my @losses-lines = @lines.grep: /^"<p>".+"</p>"/ ;
     my %data;
-    for @losses-lines.grep: /"‒"/ -> $l {
+    for @losses-lines.grep: /"‒"|"–"|"-"/ -> $l {
         my $match = $l ~~ /'p>'
-            $<concept> = [ .+ ] \s+ '‒' \s+ \w* \s*
+            $<concept> = [ .+ ] \s+ ['‒'|'–'|'-'] \s+ \w* \s*
             $<total> = [\d+]\s+ \( "+"
             $<delta> = [\d+] /;
         warn "«$l» can't be properly parsed" unless $match{'concept'};
@@ -24,17 +24,6 @@ has DateTime $!date;
 proto new(|) {*}
 
 submethod BUILD( :%!data, :$!date) {}
-
-multi method new( $URI where /^https:/, $date = DateTime.now  ) {
-    my $wd = WebDriver.new:
-        :4444port,
-        :capabilities(
-            :alwaysMatch('moz:firefoxOptions' => :args('-headless',))
-        );
-    $wd.get: "https://raku.org";
-    say $wd.find("p");
-#    self.bless( :$date, data => scrape($page.split("\n")) );
-}
 
 multi method new( $uri, $date = DateTime.now,) {
     self.bless( :$date, data => scrape($uri.IO.lines) );
