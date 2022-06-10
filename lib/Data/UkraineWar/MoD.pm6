@@ -6,16 +6,17 @@ has %!data;
 
 method new( $directory ) {
     my %data;
+    my $files;
     for dir( $directory, test => { /\.html$/ }) -> $file {
         my $content = $file.slurp;
         if ( $content !~~ / "<p>APV"/ ) {
-            say "{$file.path} does not contain combat losses data";
+            $files ~= "\"$file\" ";
         } else {
-            say "{$file.path} contains data";
             $file ~~ /$<date> = [\d+\.\d+] \s+ \|/;
             my $daily =  Data::UkraineWar::MoD::Daily( $content, ~$<date> );
             %data{~$<date>} = $daily;
         }
     }
+    say $files;
     self.bless( :%data );
 }
