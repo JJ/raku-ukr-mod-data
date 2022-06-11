@@ -23,6 +23,8 @@ Failed tests for scraping are included in the `bin` directory. `scrapy.py` is
  functional, you will need to install the corresponding Python and Chrome
   dependencies.
 
+* Download `chromedriver` from [here](https://www.google.com/search?channel=fs&client=ubuntu&q=%22chromedriver%22). You'll need to copy it by hand to the directory in the script, or anywhere else and change the script too.
+
 Raw pages are included in the `raw-pages` directory. They are (c) the
  Ministry of Defense of Ukraine.
 
