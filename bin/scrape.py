@@ -29,7 +29,7 @@ days = {
 }
 
 def main() -> int:
-    if isset(sys.argv[1]):
+    if len(sys.argv) > 1:
         download(driver,sys.argv[1],sys.argv[2])
     else:
         for month in days:
