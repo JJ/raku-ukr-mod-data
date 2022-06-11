@@ -1,6 +1,6 @@
 use Data::UkraineWar::MoD::Daily;
 
-unit class Data::UkraineWar::MoD;
+unit class Data::UkraineWar::MoD::Scrape;
 
 has %!data;
 

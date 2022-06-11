@@ -1,8 +1,8 @@
 use Test;
 
-use Data::UkraineWar::MoD;
+use Data::UkraineWar::MoD::Scrape;
 
-my $war-data = Data::UkraineWar::MoD.new( "raw-pages/" );
+my $war-data = Data::UkraineWar::MoD::Scrape.new( "raw-pages/" );
 
 ok( $war-data, "Ukraine data loaded");
 
