@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Install Poetry
+        run: pip install --user poetry
       - name: Install stuff
         run: poetry install
       - name: Lint Python

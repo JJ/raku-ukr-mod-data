@@ -5,7 +5,6 @@ import time
 import random
 import sys
 
-
 def download(driver, day, month):
         url = f'https://www.mil.gov.ua/en/news/2022/{month}/{day}/the-total-combat-losses-of-the-enemy-from-24-02-to-{day}-{month}/'
         print("⬇️ Download " + url)
