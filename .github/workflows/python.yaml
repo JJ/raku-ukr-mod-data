@@ -1,9 +1,13 @@
 name: "Tests python stuff"
 on: 
   push:
-    paths: '**/*.py'
+    paths: 
+      - '**/*.py'
+      - 'pyproject.toml'
   pull_request:
-    paths: '**/*.py'
+    paths: 
+      - '**/*.py'
+      - 'pyproject.toml'
 jobs:
   test:
     runs-on: ubuntu-latest
