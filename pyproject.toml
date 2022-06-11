@@ -7,6 +7,7 @@ authors = ["JJ Merelo <jjmerelo@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 selenium = "^4.2.0"
+undetected-chromedriver = "^3.1.5"
 
 [tool.poetry.dev-dependencies]
 
