@@ -15,13 +15,18 @@ Clone this repo or install via `zef`
 
 ## Running
 
-<-- Some examples, or pointing to a directory with them -->
+You can always check the examples in the `t` directory.
 
 ## See also
 
-<-- Related stuff -->
+Failed tests for scraping are included in the `bin` directory. `scrapy.py` is
+ functional, you will need to install the corresponding Python and Chrome
+  dependencies.
+
+Raw pages are included in the `raw-pages` directory. They are (c) the
+ Ministry of Defense of Ukraine.
 
 ## License
-- 
+
 This module is licensed under the Artistic 2.0 License (the same as Raku 
 itself). See [LICENSE](LICENSE) for terms.
