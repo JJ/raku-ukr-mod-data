@@ -23,8 +23,14 @@ method data() { %!data };
 
 method CSV() {
     my $output;
-    for %!data.keys().sort() -> $k {
-        $output ~= %!data{$k}.join(", ") ~"\n";
+    for %!data
+            .keys()
+            .sort( {
+                $^a.split(".").reverse() cmp $^b.split(".").reverse()
+            }) -> $k {
+        for  %!data{$k}.kv() -> $dk, %v {
+            $output ~= "$k, $dk, " ~ %v.values().join(", ") ~ "\n";
+        }
     }
     return  $output;
 }

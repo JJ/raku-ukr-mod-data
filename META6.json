@@ -8,7 +8,7 @@
     "JJ Merelo"
   ],
   "auth": "",
-  "depends": [],
+  "depends": [ "JSON::Fast"],
   "test-depends": [
     "Test",
     "Test::META"
