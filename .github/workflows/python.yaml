@@ -1,0 +1,19 @@
+name: "Tests python stuff"
+on: 
+  push:
+    paths: '**/*.py'
+  pull_request::
+    paths: '**/*.py'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install stuff
+        run: poetry install
+      - name: Lint Python
+        run: poetry run pylint
+
+
+
