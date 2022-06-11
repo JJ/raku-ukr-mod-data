@@ -1,5 +1,5 @@
 {
-  "name": "Your::Module::Name::Here",
+  "name": "Data::UkraineWar::MoD",
   "description": "Raku distribution template",
   "version": "0.0.1",
   "perl": "6.d",
