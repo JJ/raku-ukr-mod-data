@@ -2,7 +2,7 @@ name: "Tests python stuff"
 on: 
   push:
     paths: '**/*.py'
-  pull_request::
+  pull_request:
     paths: '**/*.py'
 jobs:
   test:
