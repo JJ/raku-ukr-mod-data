@@ -8,14 +8,18 @@ submethod BUILD( :%!data ) {};
 
 method new( $directory ) {
     my %data;
+    my $invalid = "";
     for dir( $directory, test => { /\.html$/ }) -> $file {
         my $content = $file.slurp;
         if ( $content ~~ / "<p>APV"/ ) {
             $file ~~ /$<date> = [\d+\.\d+] \s+ \|/;
             my $daily =  Data::UkraineWar::MoD::Daily( $content, ~$<date> );
             %data{~$<date>} = $daily.data;
+        } else {
+            $invalid ~= $file.path;
         }
     }
+    say "Invalid\n$invalid";
     self.bless( :%data );
 }
 
