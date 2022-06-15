@@ -11,3 +11,5 @@ lib/.precomp
 # comma
 .idea/
 *.iml
+
+__pycache__
