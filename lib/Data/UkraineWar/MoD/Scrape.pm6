@@ -3,12 +3,13 @@ use Data::UkraineWar::MoD::Daily;
 unit class Data::UkraineWar::MoD::Scrape;
 
 has %!data;
+has @!invalid-files;
 
 submethod BUILD( :%!data ) {};
 
 method new( $directory ) {
     my %data;
-    my $invalid = "";
+    my @invalid;
     for dir( $directory, test => { /\.html$/ }) -> $file {
         my $content = $file.slurp;
         if ( $content ~~ / "<p>APV"/ ) {
@@ -16,11 +17,10 @@ method new( $directory ) {
             my $daily =  Data::UkraineWar::MoD::Daily( $content, ~$<date> );
             %data{~$<date>} = $daily.data;
         } else {
-            $invalid ~= $file.path;
+            @invalid.push: $file.path;
         }
     }
-    say "Invalid\n$invalid";
-    self.bless( :%data );
+    self.bless( :%data, :@invalid );
 }
 
 method data() { %!data };
