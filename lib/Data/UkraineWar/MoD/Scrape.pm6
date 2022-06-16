@@ -14,7 +14,7 @@ method new( $directory ) {
         my $content = $file.slurp;
         if ( $content ~~ / "<p>APV"/ ) {
             $file ~~ /$<date> = [\d+\.\d+] \s+ \|/;
-            my $daily =  Data::UkraineWar::MoD::Daily( $content, ~$<date> );
+            my $daily = Data::UkraineWar::MoD::Daily( $content, ~$<date> );
             %data{~$<date>} = $daily.data;
         } else {
             @invalid.push: $file.path;
@@ -26,7 +26,7 @@ method new( $directory ) {
 method data() { %!data };
 
 method CSV() {
-    my $output;
+    my $output = "Date, Item, Delta, Total\n";
     for %!data
             .keys()
             .sort( {
