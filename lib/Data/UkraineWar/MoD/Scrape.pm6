@@ -3,9 +3,9 @@ use Data::UkraineWar::MoD::Daily;
 unit class Data::UkraineWar::MoD::Scrape;
 
 has %!data;
-has @!invalid-files;
+has @!invalid;
 
-submethod BUILD( :%!data ) {};
+submethod BUILD( :%!data, :@!invalid ) {};
 
 method new( $directory ) {
     my %data;
@@ -17,6 +17,7 @@ method new( $directory ) {
             my $daily =  Data::UkraineWar::MoD::Daily( $content, ~$<date> );
             %data{~$<date>} = $daily.data;
         } else {
+            say " ❌ → Invalid {$file.path}";
             @invalid.push: $file.path;
         }
     }
@@ -37,4 +38,8 @@ method CSV() {
         }
     }
     return  $output;
+}
+
+method invalid-files() {
+    return @!invalid.map( '"' ~ * ~ '"' ).join( " " )
 }
