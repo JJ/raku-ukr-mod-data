@@ -17,7 +17,6 @@ method new( $directory ) {
             my $daily =  Data::UkraineWar::MoD::Daily( $content, ~$<date> );
             %data{~$<date>} = $daily.data;
         } else {
-            say " ❌ → Invalid {$file.path}";
             @invalid.push: $file.path;
         }
     }
