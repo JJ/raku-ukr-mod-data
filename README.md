@@ -7,11 +7,12 @@ those pages, for instance [this one](https://www.mil.gov.
 ua/en/news/2022/06/05/the-total-combat-losses-of-the-enemy-from-24-02-to-05-06/).
 
 > Note: the English one is updated less frequently than the [Ukrainian one](https://www.mil.gov.ua/news/2022/06/08/vid-pochatku-povnomasshtabnoi-vijni-proti-ukraini-rosiya-vtratila-uzhe-1393-tanki-znishheno-703-artilerijskih-sistemi-voroga-%E2%80%93-generalnij-shtab-zs-ukraini/)
-> At least there's a 2 day delay. I can't figure the later, unfortunately
+> It's also updated less, many days are missing.
 
 ## Installing
 
-Clone this repo or install via `zef`
+Clone this repo or install via `zef` (when I upload it to the ecosystem
+, shortly).
 
 ## Running
 
