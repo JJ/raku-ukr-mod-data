@@ -1,0 +1,18 @@
+use lib "lib";
+use Data::UkraineWar::MoD::Scrape;
+
+my $data = Data::UkraineWar::MoD::Scrape.new( "raw-pages" );
+
+task 'download', {
+    shell "bin/scrape.py";
+}
+
+task 'prescrape', {
+    if $data.invalid-files() {
+        die " ❌ → Invalid files ⇒\n", $data.invalid-files();
+    };
+}
+
+task 'scrape' => <prescrape>, {
+    say $data.CSV;
+} ;
