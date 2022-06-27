@@ -13,6 +13,6 @@ task 'prescrape', {
     };
 }
 
-task 'scrape' => <prescrape>, {
-    say $data.CSV;
+task 'CSV' => <prescrape>, {
+    "resources/ukr-mod-data.csv".IO.spurt($data.CSV);
 } ;
