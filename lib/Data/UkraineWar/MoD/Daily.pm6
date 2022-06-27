@@ -3,9 +3,10 @@ sub scrape( @lines ) is export {
     my %data;
     for @losses-lines.grep: /"‒"|"–"|"-"/ -> $l {
         my $match = $l ~~ /'p>'
-            $<concept> = [ .+ ] \s+ ['‒'|'–'|'-'] \s* \w* \s*
-            $<total> = [\d+][\s+ \( "+"
-            $<delta> = [\d+]]? /;
+            $<concept> = [ .+ ] \s+ ['‒'|'–'|'-'] \s+ "about"? \s*
+            $<total> = [\d+]
+            \s+ [\( "+"]?
+            $<delta> = [[\d+]]? /;
         warn " ⚠️ «$l» can't be properly parsed" unless $match{'concept'};
         warn " ⚠️ «$l» has problems with numbers" unless $match{'total'};
         next unless $match{'concept'} and $match{'total'};
@@ -32,6 +33,12 @@ multi method new( $uri where .IO.e, $date = DateTime.now,) {
 multi method new( $str, $date = DateTime.now,) {
     self.bless( :$date, data => scrape($str.lines) );
 }
+
 method data() {
     return %!data;
 }
+
+method data-for( $key ) {
+    return %!data{$key};
+}
+
