@@ -20,15 +20,9 @@ def download(driver, day, month):
 driver = uc.Chrome(
     driver_executable_path='/opt/google/chrome/chromedriver', headless=True
 )
-days = {
-    "06": [i for i in range(9, 1, -1)],
-    "05": [i for i in range(9, 1, -1)],
-    "04": [i for i in range(9, 1, -1)],
-    "03": [i for i in range(9, 1, -1)],
-}
 
 
-def main() -> int:
+def main(days) -> int:
     if len(sys.argv) > 1:
         download(driver, sys.argv[1], sys.argv[2])
     else:

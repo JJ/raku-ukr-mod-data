@@ -9,7 +9,8 @@
   ],
   "auth": "",
   "depends": [
-    "JSON::Fast"
+    "JSON::Fast",
+    "Ake"
   ],
   "test-depends": [
     "Test",
