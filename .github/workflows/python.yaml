@@ -1,11 +1,11 @@
 name: "Tests python stuff"
-on: 
+on:
   push:
-    paths: 
+    paths:
       - '**/*.py'
       - 'pyproject.toml'
   pull_request:
-    paths: 
+    paths:
       - '**/*.py'
       - 'pyproject.toml'
 jobs:

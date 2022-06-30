@@ -1,6 +1,6 @@
 """_Downloads pages from the Ukrainian MoD using chromedriver;
     A file with the same name will be saved in the `raw-pages` directory.
-    """
+"""
 
 import time
 import random
@@ -8,6 +8,10 @@ import sys
 from datetime import date
 
 import undetected_chromedriver as uc
+
+driver = uc.Chrome(
+    driver_executable_path='/opt/google/chrome/chromedriver', headless=True
+)
 
 
 def download(drv, day, month):
@@ -29,11 +33,6 @@ def download(drv, day, month):
     sleeping = random.randrange(5, 15)
     print(f'⌛ waiting for {sleeping}')
     time.sleep(sleeping)
-
-
-driver = uc.Chrome(
-    driver_executable_path='/opt/google/chrome/chromedriver', headless=True
-)
 
 
 def main(days) -> int:
