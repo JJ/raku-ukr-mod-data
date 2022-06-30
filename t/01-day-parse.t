@@ -11,7 +11,6 @@ my @APVs = [3392, 3213,1946];
 for ( $data-file, "data/may-25-05.html", "data/first.html" ) -> $uri {
     my $daily = Data::UkraineWar::MoD::Daily.new("$path$uri");
     ok($daily, "Loads daily file from test data");
-    say $daily.data().keys().sort().join("|");
     is($daily.data().keys().elems(), 13, "Got correct keys");
     is($daily.data-for("helicopters")<total>,shift @helicopters);
     is($daily.data-for("UAV operational-tactical level")<delta>,shift @uavs);

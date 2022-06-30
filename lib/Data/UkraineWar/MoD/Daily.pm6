@@ -34,8 +34,8 @@ sub scrape( @lines ) is export {
         warn " ⚠️ «$l» has problems with numbers" unless $match{'total'};
         next unless $match{'concept'} and $match{'total'};
         %data{~$match{'concept'}} = {
-              total => ~$match{'total'},
-              delta => $match{'delta'} ??  $match{'delta'} !! 0;
+              total => +$match{'total'},
+              delta => +$match{'delta'} ??  +$match{'delta'} !! 0;
         };
     }
     return %data;

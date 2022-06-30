@@ -33,6 +33,8 @@ method CSV() {
                 $^a.split(".").reverse() cmp $^b.split(".").reverse()
             }) -> $k {
         for  %!data{$k}.kv() -> $dk, %v {
+            say %!data{$k};
+            say $dk;
             $output ~= "$k, $dk, " ~ %v.values().join(", ") ~ "\n";
         }
     }
