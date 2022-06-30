@@ -15,7 +15,7 @@ days = {}
 
 if not sys.argv[1]:
     days = {
-        "06": list(range(27, 9, -1)]),
+        "06": list(range(27, 9, -1)),
     }
 else:
     days = {sys.argv[1]: [sys.argv[2]]}
