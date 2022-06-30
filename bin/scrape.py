@@ -5,8 +5,9 @@
     of the days that are going to be downloaded as value.
     """
 
-from ukr_mod_data import main
 import sys
+
+from ukr_mod_data import main
 sys.path.append(".")
 sys.path.append("..")
 

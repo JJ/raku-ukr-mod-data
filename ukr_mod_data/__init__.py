@@ -24,7 +24,7 @@ def download(drv, day, month):
     drv.get(url)
     filename = f'raw-pages/The total combat losses of the enemy from 24.02 to {day}.{month} | Міноборони.html'
     print("💾 saving " + filename)
-    with open(filename, "w") as file:
+    with open(filename, "w", encoding='utf-8') as file:
         file.write(drv.page_source)
     sleeping = random.randrange(5, 15)
     print(f'⌛ waiting for {sleeping}')
