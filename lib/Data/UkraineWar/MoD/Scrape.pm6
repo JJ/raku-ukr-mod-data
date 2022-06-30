@@ -32,8 +32,8 @@ method CSV() {
             .sort( {
                 $^a.split(".").reverse() cmp $^b.split(".").reverse()
             }) -> $k {
-        for  %!data{$k}.kv() -> $dk, %v { 
-            $output ~= "$k, $dk, " ~ %v.values().join(", ") ~ "\n";
+        for  %!data{$k}.kv() -> $dk, %v {
+            $output ~= "$k, $dk, " ~ %v<delta total>.join(", ") ~ "\n";
         }
     }
     return  $output;
