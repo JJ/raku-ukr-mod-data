@@ -1,3 +1,6 @@
+"""_Downloads pages from the Ukrainian MoD using chromedriver;
+    A file with the same name will be saved in the `raw-pages` directory.
+    """
 import undetected_chromedriver as uc
 import time
 import random
