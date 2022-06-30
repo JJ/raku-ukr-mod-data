@@ -3,8 +3,12 @@
 sub post-process( %data ) is export {
     my %processed-data = %data;
     if %data{"fuel tanks"} && %data{"vehicles"} {
-        %processed-data{"vehicles and fuel tanks"} = %data{"fuel tanks"} +
-                %data{"vehicles"};
+        %processed-data{"vehicles and fuel tanks"} = {
+            total => %data{"fuel tanks"} +
+                    %data{"vehicles"},
+            delta => 0
+        };
+
         %processed-data{"fuel tanks"}:delete;
         %processed-data{"vehicles"}:delete;
     }
