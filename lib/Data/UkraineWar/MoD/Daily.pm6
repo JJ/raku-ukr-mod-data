@@ -1,3 +1,26 @@
+
+# Postprocesses to make it uniform
+sub post-process( %data ) is export {
+    my %processed-data = %data;
+    if %data{"fuel tanks"} && %data{"vehicles"} {
+        %processed-data{"vehicles and fuel tanks"} = %data{"fuel tanks"} +
+                %data{"vehicles"};
+        %processed-data{"fuel tanks"}:delete;
+        %processed-data{"vehicles"}:delete;
+    }
+
+    if %data{"boats / cutters"}  {
+        %processed-data{"warships / boats"} = %data{"boats / cutters"};
+        %processed-data{"boats / cutters"}:delete;
+    }
+
+    %processed-data{"cruise missiles"} = { :0total, :0delta } unless
+      %processed-data{"cruise missiles"};
+
+    %processed-data{"mobile SRBM system"}:delete;
+    return %processed-data;
+}
+
 sub scrape( @lines ) is export {
     my @losses-lines = @lines.grep: /^"<p>".+"</p>"/ ;
     my %data;
@@ -27,11 +50,11 @@ proto new(|) {*}
 submethod BUILD( :%!data, :$!date) {}
 
 multi method new( $uri where .IO.e, $date = DateTime.now,) {
-    self.bless( :$date, data => scrape($uri.IO.lines) );
+    self.bless( :$date, data => post-process(scrape($uri.IO.lines)) );
 }
 
 multi method new( $str, $date = DateTime.now,) {
-    self.bless( :$date, data => scrape($str.lines) );
+    self.bless( :$date, data => post-process(scrape($str.lines)) );
 }
 
 method data() {
