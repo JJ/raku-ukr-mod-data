@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "raku-ukr-mod-data"
+name = "ukr-mod-data"
 version = "0.1.0"
 description = ""
 authors = ["JJ Merelo <jjmerelo@gmail.com>"]
@@ -15,3 +15,6 @@ pylint = "^2.14.1"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+scrape = 'ukr_mod_data.__init__:main'
