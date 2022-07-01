@@ -1,0 +1,19 @@
+name: These files can only be modified via push
+on:
+  pull_request:
+    paths:
+      - "LICENSE"
+      - "META6.json"
+      - "resources/*.csv"
+      - "resources/*.parquet"
+      - "raw-pages/*.html"
+
+jobs:
+  check_frozen_files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: If triggered, protest loudly
+        run: |
+          echo "::error::These files can be changed only by the authors"
+          echo ::set-output name=status::failure
+          exit 1
