@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      uses: actions/setup-go@v3
-      with:
-        go-version: '^1.18.3'
+      - uses: actions/setup-go@v3
+        with:
+          go-version: "^1.18.3"
       - name: Install CSV to Parquet cli tool
         run: go install github.com/fraugster/parquet-go/cmd/csv2parquet@latest
       - name: Convert CSV to Parquet
