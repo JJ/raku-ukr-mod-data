@@ -5,6 +5,7 @@
 import time
 import random
 import sys
+import re
 from datetime import date
 
 import undetected_chromedriver as uc
@@ -15,7 +16,8 @@ driver = uc.Chrome(
 
 
 def download(drv, day, month):
-    """_Downloads a single page, sleeps for a random time after
+    """_Downloads a single page, checks if there's the right regex there,
+    sleeps for a random time after
 
     Args:
         driver ( ChromeDriver ): driver used to download
@@ -26,10 +28,13 @@ def download(drv, day, month):
     url = f'https://www.mil.gov.ua/en/news/2022/{month}/{day}/the-total-combat-losses-of-the-enemy-from-24-02-to-{day:02}-{month}/'
     print("⬇️ Download " + url)
     drv.get(url)
-    filename = f'raw-pages/The total combat losses of the enemy from 24.02 to {day}.{month} | Міноборони.html'
+    filename = f'raw-pages/combat-losses-to-{day}-{month}.html'
     print("💾 saving " + filename)
-    with open(filename, "w", encoding='utf-8') as file:
-        file.write(drv.page_source)
+    if re.search(r"about\s+\d+", drv.page_source):
+        with open(filename, "w", encoding='utf-8') as file:
+            file.write(drv.page_source)
+    else:
+        print(f'{url} does not contain the required data')
     sleeping = random.randrange(5, 15)
     print(f'⌛ waiting for {sleeping}')
     time.sleep(sleeping)
