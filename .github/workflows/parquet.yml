@@ -15,9 +15,9 @@ jobs:
         with:
           go-version: "^1.18.3"
       - name: Install CSV to Parquet cli tool
-        run: go install github.com/fraugster/parquet-go/cmd/csv2parquet@latest
+        run: go env GOPATH && go install github.com/fraugster/parquet-go/cmd/csv2parquet@latest
       - name: Convert CSV to Parquet
         working-directory: resources
-        run: ~/lib/Go/bin/csv2parquet -input ukr-mod-data.csv -output ukr-mod-data.parquet
+        run: csv2parquet -input ukr-mod-data.csv -output ukr-mod-data.parquet
       - name: Check in
         run: git config --global user.email 'jjmerelo@gmail.com' && git config --global user.name "UKR-Mod-Data repo" && git commit -am "Re-generated parquet file" && git push
