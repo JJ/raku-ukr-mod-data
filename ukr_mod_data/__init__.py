@@ -49,6 +49,7 @@ def main(days) -> int:
 
 
 def download_today():
+    """ Download the losses URL corresponding to today's date"""
     print("Downloading today's data")
     today = date.today()
     print(today)
