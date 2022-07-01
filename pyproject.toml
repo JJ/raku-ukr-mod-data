@@ -1,12 +1,11 @@
 [tool.poetry]
 name = "ukr-mod-data"
 version = "0.1.0"
-description = ""
+description = "Dowloader for Ukraine MoD data on enemy losses"
 authors = ["JJ Merelo <jjmerelo@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-selenium = "^4.2.0"
 undetected-chromedriver = "^3.1.5"
 
 [tool.poetry.dev-dependencies]
@@ -17,4 +16,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-scrape = 'ukr_mod_data.__init__:main'
+scrape = 'ukr_mod_data.__init__:download_today'

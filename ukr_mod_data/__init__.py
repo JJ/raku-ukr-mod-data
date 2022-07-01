@@ -48,6 +48,12 @@ def main(days) -> int:
                 download(driver, day, month)
 
 
-if __name__ == '__main__':
-    today = date.today
+def download_today():
+    print("Downloading today's data")
+    today = date.today()
+    print(today)
     sys.exit(main({f'{today.month:02}': [f'{today.day:02}']}))
+
+
+if __name__ == '__main__':
+    download_today()
