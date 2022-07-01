@@ -1,0 +1,19 @@
+name: "Tests python stuff"
+on:
+  push:
+    paths:
+      - "resources/*.csv"
+
+jobs:
+  generate_parquet:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install CSV to Parquet cli tool
+        run: go install github.com/fraugster/parquet-go/cmd/csv2parquet@latest
+      - name: Convert CSV to Parquet
+        working-directory: resources
+        run: csv2parquet -input ukr-mod-data.csv -output ukr-mod-data.parquet
+      - name: Check in
+        run: git config --global user.email 'jjmerelo@gmail.com' && git config --global user.name "UKR-Mod-Data repo" && git commit -am "Re-generated parquet file" && git push
