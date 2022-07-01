@@ -28,7 +28,7 @@ def download(drv, day, month):
     url = f'https://www.mil.gov.ua/en/news/2022/{month}/{day}/the-total-combat-losses-of-the-enemy-from-24-02-to-{day:02}-{month}/'
     print("⬇️ Download " + url)
     drv.get(url)
-    filename = f'raw-pages/combat-losses-to-{day}-{month}.html'
+    filename = f'raw-pages/combat-losses-to-{day}-{month} |.html'
     print("💾 saving " + filename)
     if re.search(r"about\s+\d+", drv.page_source):
         with open(filename, "w", encoding='utf-8') as file:
