@@ -1,5 +1,5 @@
-name: "Test in a Raku container - template"
-on: [ push, pull_request ]
+name: "Test in a Raku container"
+on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -21,6 +21,3 @@ jobs:
         run: zef install --deps-only .
       - name: Test
         run: zef --debug test .
-
-
-
