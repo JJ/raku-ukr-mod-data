@@ -19,6 +19,6 @@ jobs:
       - name: Install stuff
         run: poetry install
       - name: Lint Python
-        run: chrome --headless && poetry run pylint */*.py
+        run: chromium-browser --headless && poetry run pylint */*.py
 
 

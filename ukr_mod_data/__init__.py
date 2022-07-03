@@ -14,7 +14,9 @@ from datetime import date
 import undetected_chromedriver as uc
 
 LOCAL_CHRPATH = '/opt/google/chrome/chromedriver'
-driver_path = f"{os.getenv('CHROMEWEBDRIVER')}/chromedriver" or LOCAL_CHRPATH
+driver_path = LOCAL_CHRPATH
+if os.getenv('CHROMEWEBDRIVER'):
+    driver_path = f"{os.getenv('CHROMEWEBDRIVER')}/chromedriver"
 driver = uc.Chrome(
     driver_executable_path=driver_path, headless=True
 )
