@@ -1,5 +1,6 @@
-"""_Downloads pages from the Ukrainian MoD using chromedriver;
-    A file with the same name will be saved in the `raw-pages` directory.
+"""_Downloads pages from the Ukrainian MoD using
+    `undetected_chromedriver`;
+    A file with a formatted name will be saved in the raw_pages directory.
 """
 
 import time

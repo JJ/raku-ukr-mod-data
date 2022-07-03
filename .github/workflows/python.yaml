@@ -21,7 +21,4 @@ jobs:
       - name: Lint Python
         run: poetry run pylint */*.py
       - name: Test Python
-        run: poetry run pytest --verbose
-
-
-
+        run: ls $CHROMEWEBDRIVER
