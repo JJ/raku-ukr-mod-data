@@ -11,7 +11,7 @@ from ukr_mod_data import main, download_today
 sys.path.append(".")
 sys.path.append("..")
 
-if not sys.argv[1]:
+if len(sys.argv) == 1:
     download_today()
 else:
     main({sys.argv[1]: [sys.argv[2]]})
