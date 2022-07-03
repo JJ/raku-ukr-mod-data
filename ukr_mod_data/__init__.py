@@ -5,13 +5,17 @@
 import time
 import random
 import sys
+import os
 import re
 from datetime import date
 
+
 import undetected_chromedriver as uc
 
+LOCAL_CHRPATH = '/opt/google/chrome/chromedriver'
+driver_path = os.getenv('CHROMEWEBDRIVER') or LOCAL_CHRPATH
 driver = uc.Chrome(
-    driver_executable_path='/opt/google/chrome/chromedriver', headless=True
+    driver_executable_path=driver_path, headless=True
 )
 
 
