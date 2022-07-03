@@ -1,5 +1,6 @@
 # Using Raku to scrape and analyze Ukraine Ministry of Defense Data
 
+[![Test in a Raku container](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/test.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/test.yaml)
 [![Tests python stuff](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/python.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/python.yaml)
 [![Generates parquet from the CSV file](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/parquet.yml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/parquet.yml)
 
@@ -14,7 +15,9 @@ ua/en/news/2022/06/05/the-total-combat-losses-of-the-enemy-from-24-02-to-05-06/)
 
 ## Installing
 
-Clone this repo or install via `zef` (when I upload it to the ecosystem
+This repo uses Raku as well as Python for performing the whole downloading/scraping workflow. You will need a reasonably recent version of both to work. Additionally, install `poetry` globally.
+
+When that's done, clone this repo or install via `zef` (when I upload it to the ecosystem
 , shortly). If you want to run it directly from here, run
 
 ```shell
