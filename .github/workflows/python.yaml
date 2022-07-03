@@ -2,12 +2,12 @@ name: "Tests python stuff"
 on:
   push:
     paths:
-      - '**/*.py'
-      - 'pyproject.toml'
+      - "**/*.py"
+      - "pyproject.toml"
   pull_request:
     paths:
-      - '**/*.py'
-      - 'pyproject.toml'
+      - "**/*.py"
+      - "pyproject.toml"
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -20,4 +20,5 @@ jobs:
         run: poetry install
       - name: Lint Python
         run: poetry run pylint */*.py
-
+      - name: Test python
+        run: chromium-browser --headless && poetry run pytest --verbose

@@ -15,12 +15,13 @@ import undetected_chromedriver as uc
 
 LOCAL_CHRPATH = '/opt/google/chrome/chromedriver'
  # pylint: disable=invalid-name
-driver_path = LOCAL_CHRPATH
-if os.getenv('CHROMEWEBDRIVER'):
-    driver_path = f"{os.getenv('CHROMEWEBDRIVER')}/chromedriver"
-driver = uc.Chrome(
-    driver_executable_path=driver_path, headless=True
-)
+driver=None
+if os.getenv('LOCAL_CHRPATH'):
+    driver = uc.Chrome(
+        driver_executable_path=LOCAL_CHRPATH, headless=True
+    )
+else:
+    driver = uc.Chrome(headless=True)
 
 def download(day, month):
     """_Downloads a single page, checks if there's the right regex there,
