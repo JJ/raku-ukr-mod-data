@@ -28,7 +28,6 @@ def download(day, month):
     print("⬇️ Download " + url)
     driver.get(url)
     return driver.page_source
-    
 
 def save_if_correct( content, day, month ):
     """ Save content to a file with pre-established name only if correct"""
@@ -48,7 +47,7 @@ def main(days) -> int:
         days (hash): hash with months-days to download
     """
     if len(sys.argv) > 1:
-        download(driver, sys.argv[1], sys.argv[2])
+        download( sys.argv[1], sys.argv[2])
     else:
         for month in days:
             for day in days[month]:
