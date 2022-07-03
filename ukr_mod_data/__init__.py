@@ -15,29 +15,31 @@ driver = uc.Chrome(
 )
 
 
-def download(drv, day, month):
+def download(day, month):
     """_Downloads a single page, checks if there's the right regex there,
     sleeps for a random time after
 
     Args:
-        driver ( ChromeDriver ): driver used to download
         day ( int ): day of the month, used to build the URL. It will be 0 padded
         month ( str ): 0-padded month.
     """
     # pylint: disable=line-too-long
     url = f'https://www.mil.gov.ua/en/news/2022/{month}/{day}/the-total-combat-losses-of-the-enemy-from-24-02-to-{day:02}-{month}/'
     print("⬇️ Download " + url)
-    drv.get(url)
+    driver.get(url)
+    return driver.page_source
+    
+
+def save_if_correct( content, day, month ):
+    """ Save content to a file with pre-established name only if correct"""
     filename = f'raw-pages/combat-losses-to-{day}-{month} |.html'
     print("💾 saving " + filename)
-    if re.search(r"about\s+\d+", drv.page_source):
+    if re.search(r"about\s+\d+", content):
         with open(filename, "w", encoding='utf-8') as file:
-            file.write(drv.page_source)
+            file.write(content)
     else:
-        print(f'{url} does not contain the required data')
-    sleeping = random.randrange(5, 15)
-    print(f'⌛ waiting for {sleeping}')
-    time.sleep(sleeping)
+        print(f'Download for {month}-{day} does not contain the required data')
+
 
 
 def main(days) -> int:
@@ -50,7 +52,11 @@ def main(days) -> int:
     else:
         for month in days:
             for day in days[month]:
-                download(driver, day, month)
+                content = download(day, month)
+                save_if_correct(content, day, month)
+                sleeping = random.randrange(5, 15)
+                print(f'⌛ waiting for {sleeping}')
+                time.sleep(sleeping)
 
 
 def download_today():
