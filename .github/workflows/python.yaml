@@ -21,4 +21,4 @@ jobs:
       - name: Lint Python
         run: poetry run pylint */*.py
       - name: Test python
-        run: chromium-browser --headless && poetry run pytest --verbose
+        run: chromium-browser --headless && poetry run pytest

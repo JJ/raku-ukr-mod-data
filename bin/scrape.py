@@ -7,18 +7,11 @@
 
 import sys
 
-from ukr_mod_data import main
+from ukr_mod_data import main, download_today
 sys.path.append(".")
 sys.path.append("..")
 
-
-days = {}
-
 if not sys.argv[1]:
-    days = {
-        "06": list(range(27, 9, -1)),
-    }
+    download_today()
 else:
-    days = {sys.argv[1]: [sys.argv[2]]}
-
-main(days)
+    main({sys.argv[1]: [sys.argv[2]]})
