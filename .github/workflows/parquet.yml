@@ -25,5 +25,5 @@ jobs:
           git config --global user.name "UKR-Mod-Data repo"
           export DATE=$(date +"%y-%m-%d")
           git commit -am "Re-generated parquet file for $DATE"
-          git tag -a v$DATE -m "Tagging data for $(date)"
+          git tag -a data-$DATE -m "Tagging data for $(date)"
           git push --follow-tags
