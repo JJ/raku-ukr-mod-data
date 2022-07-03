@@ -14,14 +14,15 @@ from datetime import date
 import undetected_chromedriver as uc
 
 LOCAL_CHRPATH = '/opt/google/chrome/chromedriver'
- # pylint: disable=invalid-name
-driver=None
+# pylint: disable=invalid-name
+driver = None
 if os.getenv('LOCAL_CHRPATH'):
     driver = uc.Chrome(
         driver_executable_path=LOCAL_CHRPATH, headless=True
     )
 else:
     driver = uc.Chrome(headless=True)
+
 
 def download(day, month):
     """_Downloads a single page, checks if there's the right regex there,
@@ -37,9 +38,10 @@ def download(day, month):
     driver.get(url)
     return driver.page_source
 
-def save_if_correct( content, day, month ):
+
+def save_if_correct(content, day, month):
     """ Save content to a file with pre-established name only if correct"""
-    filename = f'raw-pages/combat-losses-to-{day}-{month} |.html'
+    filename = f'raw-pages/combat-losses-to-{day}.{month} |.html'
     print("💾 saving " + filename)
     if re.search(r"about\s+\d+", content):
         with open(filename, "w", encoding='utf-8') as file:
@@ -48,14 +50,13 @@ def save_if_correct( content, day, month ):
         print(f'Download for {month}-{day} does not contain the required data')
 
 
-
 def main(days) -> int:
     """ Proceeds to generate URLs and download them using the corresponding function
     Args:
         days (hash): hash with months-days to download
     """
     if len(sys.argv) > 1:
-        download( sys.argv[1], sys.argv[2])
+        download(sys.argv[1], sys.argv[2])
     else:
         for month in days:
             for day in days[month]:
