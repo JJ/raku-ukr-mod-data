@@ -19,7 +19,6 @@ driver = uc.Chrome(
     driver_executable_path=driver_path, headless=True
 )
 
-
 def download(day, month):
     """_Downloads a single page, checks if there's the right regex there,
     sleeps for a random time after
