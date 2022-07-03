@@ -14,6 +14,7 @@ from datetime import date
 import undetected_chromedriver as uc
 
 LOCAL_CHRPATH = '/opt/google/chrome/chromedriver'
+ # pylint: disable=invalid-name
 driver_path = LOCAL_CHRPATH
 if os.getenv('CHROMEWEBDRIVER'):
     driver_path = f"{os.getenv('CHROMEWEBDRIVER')}/chromedriver"
