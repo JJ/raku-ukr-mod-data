@@ -20,7 +20,4 @@ jobs:
         run: poetry install
       - name: Lint Python
         run: poetry run pylint */*.py
-      - name: Test Python
-        run: chromium-browser --headless && poetry run pytest --verbose
-
 
