@@ -28,3 +28,4 @@ jobs:
               git push --follow-tags
           else
               echo "ℹ No changes in CSV"
+          fi

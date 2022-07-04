@@ -1,7 +1,7 @@
 name: "Downloads periodically"
 on:
   schedule:
-    cron: "0 23 * * *"
+    - cron: '0 23 * * *'
 
 jobs:
   download:
@@ -22,6 +22,6 @@ jobs:
               bin/commit-push.sh "Downloads for $(date)"
               git push
           else
-              echo "ℹ No changes"
+              echo "ℹ No new files"
           fi
 
