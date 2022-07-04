@@ -28,7 +28,7 @@ jobs:
         run: ake CSV
       - name: Check in if there are changes
         run: |
-          which git
+          ls /bin/
           if [ -n "$(git status -s)" ]; then
               bin/commit-push.sh "Re-generates CSV"
               git push
