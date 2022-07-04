@@ -10,24 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       packages: read
-    container:
-      image: ghcr.io/jj/raku-zef-gha
-      env:
-        GITHUB_TOKEN: ${secrets.github_token}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Cache installed dists
-        uses: actions/cache@v2
-        id: meta6
-        with:
-          path: ~/.raku/
-          key: ${{ runner.os }}-${{ hashFiles('META6.json') }}
-      - name: Install modules
-        if: steps.meta6.outputs.cache-hit != 'true'
-        run: zef install .
       - name: Generate CSV
-        run: ake CSV
+        run: docker run -t -v `pwd`:$GITHUB_HOME/test ghcr.io/jj/ukr-mod-data:latest
       - name: Check in if there are changes
         run: |
           if [ -n "$(git status -s)" ]; then
