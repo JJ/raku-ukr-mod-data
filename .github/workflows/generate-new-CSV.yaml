@@ -1,7 +1,9 @@
 name: "Scrape downloaded HTML when created"
 on:
   push:
-    - paths: 'raw-pages/*.html'
+    paths:
+      - 'raw-pages/*.html'
+      - ".github/workflows/generate-new-CSV.yaml"
 
 jobs:
   test:
