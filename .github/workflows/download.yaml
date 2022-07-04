@@ -15,7 +15,7 @@ jobs:
         run: poetry install
       - name: Download stuff
         run: poetry run bin/scrape.py
-      - name: Check in stuff
+      - name: Check in if new pages are available
         run: |
           if [ -n "$(git status -s)" ]; then
               git add raw-pages/*.html
