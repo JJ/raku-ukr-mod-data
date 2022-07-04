@@ -22,6 +22,6 @@ jobs:
               bin/commit-push.sh "Downloads for $(date)"
               git push
           else
-              echo "No changes"
+              echo "ℹ No changes"
           fi
 

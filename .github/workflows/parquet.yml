@@ -21,7 +21,10 @@ jobs:
         run: csv2parquet -input ukr-mod-data.csv -output ukr-mod-data.parquet
       - name: Check in
         run: |
-          export DATE=$(date +"%y-%m-%d")
-          bin/commit-push.sh "Re-generated parquet file for $DATE"
-          git tag -a data-$DATE -m "Tagging data for $(date)"
-          git push --follow-tags
+          if [ -n "$(git status -s)" ]; then
+              export DATE=$(date +"%y-%m-%d")
+              bin/commit-push.sh "Re-generated parquet file for $DATE"
+              git tag -a data-$DATE -m "Tagging data for $(date)"
+              git push --follow-tags
+          else
+              echo "ℹ No changes in CSV"
