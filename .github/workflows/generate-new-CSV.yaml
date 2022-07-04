@@ -25,9 +25,10 @@ jobs:
         if: steps.meta6.outputs.cache-hit != 'true'
         run: zef install .
       - name: Generate CSV
-        run: echo $PATH && which ake && ake CSV
+        run: ake CSV
       - name: Check in if there are changes
         run: |
+          ls -alt bin/
           if [ -n "$(git status -s)" ]; then
               bin/commit-push.sh "Re-generates CSV"
               git push
