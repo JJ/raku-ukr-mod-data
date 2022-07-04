@@ -3,12 +3,14 @@
 [![Test in a Raku container](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/test.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/test.yaml)
 [![Tests python stuff](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/python.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/python.yaml)
 [![Generates parquet from the CSV file](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/parquet.yml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/parquet.yml)
+[![Scrape downloaded HTML when created and generate CSV](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/generate-new-CSV.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/generate-new-CSV.yaml)
+[![Test-create and publish Docker images](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/test-upload-ghcr.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/test-upload-ghcr.yaml)
+[![Downloads periodically](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/download.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/download.yaml)
 
 News about combat losses of the Russian invaders are periodically published
 by the [Ukraininan minister of Defense](https://www.mil.gov.ua/en/news/)
 This is a [Raku](https://raku.org) module that extracts information from
-those pages, for instance [this one](https://www.mil.gov.
-ua/en/news/2022/06/05/the-total-combat-losses-of-the-enemy-from-24-02-to-05-06/).
+those pages, for instance [this one](https://www.mil.gov.ua/en/news/2022/06/05/the-total-combat-losses-of-the-enemy-from-24-02-to-05-06/).
 
 > Note: the English one is updated less frequently than the [Ukrainian one](https://www.mil.gov.ua/news/2022/06/08/vid-pochatku-povnomasshtabnoi-vijni-proti-ukraini-rosiya-vtratila-uzhe-1393-tanki-znishheno-703-artilerijskih-sistemi-voroga-%E2%80%93-generalnij-shtab-zs-ukraini/)
 > It's also updated less, many days are missing.
