@@ -21,9 +21,7 @@ jobs:
         run: csv2parquet -input ukr-mod-data.csv -output ukr-mod-data.parquet
       - name: Check in
         run: |
-          git config --global user.email 'jjmerelo@gmail.com'
-          git config --global user.name "UKR-Mod-Data repo"
           export DATE=$(date +"%y-%m-%d")
-          git commit -am "Re-generated parquet file for $DATE"
+          bin/commit-push.sh "Re-generated parquet file for $DATE"
           git tag -a data-$DATE -m "Tagging data for $(date)"
           git push --follow-tags

@@ -1,0 +1,27 @@
+name: "Downloads periodically"
+on:
+  schedule:
+    cron: "0 23 * * *"
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Poetry
+        run: pip install --user poetry
+      - name: Install stuff
+        run: poetry install
+      - name: Download stuff
+        run: poetry run bin/scrape.py
+      - name: Check in stuff
+        run: |
+          if [ -n "$(git status -s)" ]; then
+              git add raw-pages/*.html
+              bin/commit-push.sh "Downloads for $(date)"
+              git push
+          else
+              echo "No changes"
+          fi
+
