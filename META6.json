@@ -9,7 +9,6 @@
   ],
   "auth": "",
   "depends": [
-    "JSON::Fast",
     "Ake:ver<0.1.2+>"
   ],
   "test-depends": [
