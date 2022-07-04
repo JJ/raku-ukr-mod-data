@@ -25,7 +25,7 @@ jobs:
         if: steps.meta6.outputs.cache-hit != 'true'
         run: zef install .
       - name: Generate CSV
-        run: ake CSV
+        run: echo $PATH && which raku && which ake&& ake CSV
       - name: Check in if there are changes
         run: |
           if [ -n "$(git status -s)" ]; then
