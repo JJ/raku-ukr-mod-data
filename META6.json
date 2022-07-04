@@ -24,9 +24,11 @@
   ],
   "license": "Artistic-2.0",
   "tags": [
-    "modules",
-    "template",
-    "test"
+      "modules",
+      "template",
+      "test",
+      "data science",
+      "scraping"
   ],
   "source-url": ""
 }
