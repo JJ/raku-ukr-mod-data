@@ -34,10 +34,3 @@ jobs:
           push: true
           tags: ${{ env.REGISTRY }}/jj/ukr-mod-data
 
-      - name: Build and push github actions image
-        uses: docker/build-push-action@v2.7.0
-        with:
-          context: .
-          file: github-actions.Dockerfile
-          push: true
-          tags: ${{ env.REGISTRY }}/jj/ukr-mod-data

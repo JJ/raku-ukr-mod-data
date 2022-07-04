@@ -6,7 +6,6 @@ COPY META6.json Akefile .
 COPY lib/ lib/
 COPY resources/ resources/
 
-
 RUN zef install --/test .
 
 WORKDIR /home/raku/test
