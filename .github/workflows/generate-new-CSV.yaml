@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Generate CSV
-        run: docker run -t -v `pwd`:$GITHUB_HOME/test ghcr.io/jj/ukr-mod-data:latest
+        run: docker run -t -v `pwd`:/home/raku/test ghcr.io/jj/ukr-mod-data:latest
       - name: Check in if there are changes
         run: |
           if [ -n "$(git status -s)" ]; then
