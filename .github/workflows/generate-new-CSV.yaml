@@ -8,11 +8,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    permissions:
-      packages: read
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Generate CSV
         run: docker run -t -v `pwd`:/home/raku/test ghcr.io/jj/ukr-mod-data:latest
       - name: Check in if there are changes
