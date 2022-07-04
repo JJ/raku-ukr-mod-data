@@ -1,4 +1,4 @@
-name: "Scrape downloaded HTML when created"
+name: "Scrape downloaded HTML when created and generate CSV"
 on:
   push:
     paths:
