@@ -65,7 +65,15 @@ method data() {
     return %!data;
 }
 
+method columns() {
+    return %!data.keys()
+}
+
 method data-for( $key ) {
-    return %!data{$key};
+    if %!data{$key}:exists {
+        return %!data{$key};
+    } else {
+        return Failure.new( "No such column in this data" );
+    }
 }
 
