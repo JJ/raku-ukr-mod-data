@@ -26,7 +26,7 @@ sub post-process( %data ) is export {
 }
 
 sub scrape( @lines ) is export {
-    my @losses-lines = @lines.grep: /^"<p>".+"</p>"/ ;
+    my @losses-lines = @lines.grep: /^\h*"<p>".+"</p>"/ ;
     my %data;
     for @losses-lines.grep: /"‒"|"–"|"-"/ -> $l {
         my $match = $l ~~ /'p>'
@@ -65,8 +65,8 @@ method data() {
     return %!data;
 }
 
-method columns() {
-    return %!data.keys().sort()
+method columns() returns Sequence {
+    return %!data.keys().sort();
 }
 
 method data-for( $key ) {
