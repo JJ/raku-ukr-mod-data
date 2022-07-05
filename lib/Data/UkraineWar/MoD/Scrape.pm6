@@ -20,7 +20,6 @@ method new( $directory ) {
             if !@columns {
                 @columns = $daily.columns();
             } elsif @columns.join(".") ne $daily.columns().join(".") {
-                say "$file, ", $daily.data;
                 return Failure.new("Unknown columns: \n{@columns.join(".")}\n{$daily.columns().join(".")}");
             }
             %data{~$<date>} = $daily.data;
@@ -28,21 +27,23 @@ method new( $directory ) {
             @invalid.push: $file.path;
         }
     }
-    say "Columns ", @columns;
     self.bless( :%data, :@invalid, :@columns );
 }
 
 method data() { %!data };
 
 method CSV() {
-    my $output = "Date, " ~ @!columns.join(", ");
+    my $output = "Date, Item, Delta, Total\n";
     for %!data
             .keys()
             .sort( {
                 $^a.split(".").reverse() cmp $^b.split(".").reverse()
             }) -> $k {
-        say %!data{$k};
-        $output ~= "$k, " ~ %!data{$k}{@!columns}.join(", ") ~ "\n";
+        for  %!data{$k}.keys().sort() -> $dk {
+            $output ~=
+                    "$k, $dk, " ~ %!data{$k}{$dk}<delta total>.join(", ")  ~
+                    "\n";
+        }
     }
     return  $output;
 }
