@@ -2,7 +2,7 @@ name: "Downloads periodically"
 on:
   push:
     paths:
-      - ".github/workflows/download.yml"
+      - ".github/workflows/download.yaml"
 
   schedule:
     - cron: '0 23 * * *'
