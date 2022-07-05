@@ -33,7 +33,7 @@ def download(day, month):
         month ( str ): 0-padded month.
     """
     # pylint: disable=line-too-long
-    url = f'https://www.mil.gov.ua/en/news/2022/{month}/{day}/the-total-combat-losses-of-the-enemy-from-24-02-to-{day:02}-{month}/'
+    url = f'https://www.mil.gov.ua/en/news/2022/{month}/{day}/the-total-combat-losses-of-the-enemy-from-24-02-to-{day}-{month}/'
     print("⬇️ Download " + url)
     driver.get(url)
     return driver.page_source
@@ -71,7 +71,6 @@ def download_today():
     """ Download the VSRF losses report URL corresponding to today's date"""
     print("Downloading today's data")
     today = date.today()
-    print(today)
     sys.exit(main({f'{today.month:02}': [f'{today.day:02}']}))
 
 
