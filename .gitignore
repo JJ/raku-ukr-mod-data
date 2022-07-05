@@ -13,3 +13,7 @@ lib/.precomp
 *.iml
 
 __pycache__
+
+# R
+.RData
+.Rhistory
