@@ -1,5 +1,8 @@
 name: "Downloads periodically"
 on:
+  push:
+    - path: ".github/workflow/download.yml"
+
   schedule:
     - cron: '0 23 * * *'
 
@@ -13,7 +16,7 @@ jobs:
         run: pip install --user poetry
       - name: Install stuff
         run: poetry install
-      - name: Download stuff
+      - name: Download today's report
         run: poetry run bin/scrape.py
       - name: Check in if new pages are available
         run: |
