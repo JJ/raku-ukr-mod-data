@@ -66,7 +66,7 @@ method data() {
 }
 
 method columns() {
-    return %!data.keys()
+    return %!data.keys().sort()
 }
 
 method data-for( $key ) {
