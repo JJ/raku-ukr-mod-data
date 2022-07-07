@@ -12,173 +12,173 @@ Date, Item, Delta, Total
 12.04, tanks, 0, 732
 12.04, vehicles and fuel tanks, 0, 4
 12.04, warships / boats, 0, 7
-13.04, APV, 0, 1964
-13.04, Anti-aircraft warfare systems, 0, 64
-13.04, MLRS, 0, 115
-13.04, UAV operational-tactical level, 0, 132
-13.04, aircraft, 0, 158
-13.04, artillery systems, 0, 358
+13.04, APV, 18, 1964
+13.04, Anti-aircraft warfare systems, 1, 64
+13.04, MLRS, 4, 115
+13.04, UAV operational-tactical level, 8, 132
+13.04, aircraft, 1, 158
+13.04, artillery systems, 9, 358
 13.04, cruise missiles, 0, 0
-13.04, helicopters, 0, 143
-13.04, personnel, 0, 19800
+13.04, helicopters, 3, 143
+13.04, personnel, 200, 19800
 13.04, special equipment, 0, 25
-13.04, tanks, 0, 739
+13.04, tanks, 7, 739
 13.04, vehicles and fuel tanks, 0, 4
 13.04, warships / boats, 0, 7
-14.04, APV, 0, 1968
+14.04, APV, 4, 1968
 14.04, Anti-aircraft warfare systems, 0, 64
-14.04, MLRS, 0, 122
-14.04, UAV operational-tactical level, 0, 134
-14.04, aircraft, 0, 160
-14.04, artillery systems, 0, 366
+14.04, MLRS, 7, 122
+14.04, UAV operational-tactical level, 2, 134
+14.04, aircraft, 2, 160
+14.04, artillery systems, 8, 366
 14.04, cruise missiles, 0, 0
-14.04, helicopters, 0, 144
-14.04, personnel, 0, 19900
+14.04, helicopters, 1, 144
+14.04, personnel, 100, 19900
 14.04, special equipment, 0, 25
-14.04, tanks, 0, 753
+14.04, tanks, 14, 753
 14.04, vehicles and fuel tanks, 0, 4
 14.04, warships / boats, 0, 7
-15.04, APV, 0, 1976
-15.04, Anti-aircraft warfare systems, 0, 66
+15.04, APV, 8, 1976
+15.04, Anti-aircraft warfare systems, 2, 66
 15.04, MLRS, 0, 122
-15.04, UAV operational-tactical level, 0, 135
-15.04, aircraft, 0, 163
+15.04, UAV operational-tactical level, 1, 135
+15.04, aircraft, 3, 163
 15.04, artillery systems, 0, 366
 15.04, cruise missiles, 0, 0
 15.04, helicopters, 0, 144
-15.04, personnel, 0, 20000
+15.04, personnel, 100, 20000
 15.04, special equipment, 0, 25
-15.04, tanks, 0, 756
+15.04, tanks, 3, 756
 15.04, vehicles and fuel tanks, 0, 4
-15.04, warships / boats, 0, 8
-16.04, APV, 0, 1982
+15.04, warships / boats, 1, 8
+16.04, APV, 6, 1982
 16.04, Anti-aircraft warfare systems, 0, 66
-16.04, MLRS, 0, 125
-16.04, UAV operational-tactical level, 0, 138
+16.04, MLRS, 3, 125
+16.04, UAV operational-tactical level, 3, 138
 16.04, aircraft, 0, 163
-16.04, artillery systems, 0, 371
+16.04, artillery systems, 5, 371
 16.04, cruise missiles, 0, 0
-16.04, helicopters, 0, 145
-16.04, personnel, 0, 20100
-16.04, special equipment, 0, 26
-16.04, tanks, 0, 762
+16.04, helicopters, 1, 145
+16.04, personnel, 100, 20100
+16.04, special equipment, 1, 26
+16.04, tanks, 6, 762
 16.04, vehicles and fuel tanks, 0, 4
 16.04, warships / boats, 0, 8
-17.04, APV, 0, 2002
+17.04, APV, 20, 2002
 17.04, Anti-aircraft warfare systems, 0, 66
-17.04, MLRS, 0, 127
-17.04, UAV operational-tactical level, 0, 148
-17.04, aircraft, 0, 165
-17.04, artillery systems, 0, 376
+17.04, MLRS, 2, 127
+17.04, UAV operational-tactical level, 10, 148
+17.04, aircraft, 2, 165
+17.04, artillery systems, 5, 376
 17.04, cruise missiles, 0, 0
-17.04, helicopters, 0, 146
-17.04, personnel, 0, 20300
-17.04, special equipment, 0, 27
-17.04, tanks, 0, 773
+17.04, helicopters, 1, 146
+17.04, personnel, 200, 20300
+17.04, special equipment, 1, 27
+17.04, tanks, 11, 773
 17.04, vehicles and fuel tanks, 0, 4
 17.04, warships / boats, 0, 8
-18.04, APV, 0, 2041
-18.04, Anti-aircraft warfare systems, 0, 67
-18.04, MLRS, 0, 130
-18.04, UAV operational-tactical level, 0, 155
-18.04, aircraft, 0, 167
-18.04, artillery systems, 0, 381
+18.04, APV, 39, 2041
+18.04, Anti-aircraft warfare systems, 1, 67
+18.04, MLRS, 3, 130
+18.04, UAV operational-tactical level, 7, 155
+18.04, aircraft, 2, 167
+18.04, artillery systems, 5, 381
 18.04, cruise missiles, 0, 0
-18.04, helicopters, 0, 147
-18.04, personnel, 0, 20600
+18.04, helicopters, 1, 147
+18.04, personnel, 300, 20600
 18.04, special equipment, 0, 27
-18.04, tanks, 0, 790
+18.04, tanks, 17, 790
 18.04, vehicles and fuel tanks, 0, 4
 18.04, warships / boats, 0, 8
-19.04, APV, 0, 2063
+19.04, APV, 22, 2063
 19.04, Anti-aircraft warfare systems, 0, 67
-19.04, MLRS, 0, 132
-19.04, UAV operational-tactical level, 0, 158
-19.04, aircraft, 0, 169
-19.04, artillery systems, 0, 386
+19.04, MLRS, 2, 132
+19.04, UAV operational-tactical level, 3, 158
+19.04, aircraft, 2, 169
+19.04, artillery systems, 5, 386
 19.04, cruise missiles, 0, 0
-19.04, helicopters, 0, 150
-19.04, personnel, 0, 20800
+19.04, helicopters, 3, 150
+19.04, personnel, 200, 20800
 19.04, special equipment, 0, 27
-19.04, tanks, 0, 802
+19.04, tanks, 12, 802
 19.04, vehicles and fuel tanks, 0, 4
 19.04, warships / boats, 0, 8
-20.04, APV, 0, 2087
+20.04, APV, 24, 2087
 20.04, Anti-aircraft warfare systems, 0, 67
-20.04, MLRS, 0, 136
-20.04, UAV operational-tactical level, 0, 165
-20.04, aircraft, 0, 171
-20.04, artillery systems, 0, 391
+20.04, MLRS, 4, 136
+20.04, UAV operational-tactical level, 7, 165
+20.04, aircraft, 2, 171
+20.04, artillery systems, 5, 391
 20.04, cruise missiles, 0, 0
 20.04, helicopters, 0, 150
-20.04, personnel, 0, 20900
+20.04, personnel, 100, 20900
 20.04, special equipment, 0, 27
-20.04, tanks, 0, 815
+20.04, tanks, 13, 815
 20.04, vehicles and fuel tanks, 0, 4
 20.04, warships / boats, 0, 8
-21.04, APV, 0, 2118
+21.04, APV, 31, 2118
 21.04, Anti-aircraft warfare systems, 0, 67
 21.04, MLRS, 0, 136
-21.04, UAV operational-tactical level, 0, 166
-21.04, aircraft, 0, 172
-21.04, artillery systems, 0, 393
+21.04, UAV operational-tactical level, 1, 166
+21.04, aircraft, 1, 172
+21.04, artillery systems, 2, 393
 21.04, cruise missiles, 0, 0
-21.04, helicopters, 0, 151
-21.04, personnel, 0, 21000
+21.04, helicopters, 1, 151
+21.04, personnel, 100, 21000
 21.04, special equipment, 0, 27
-21.04, tanks, 0, 829
+21.04, tanks, 14, 829
 21.04, vehicles and fuel tanks, 0, 4
 21.04, warships / boats, 0, 8
-22.04, APV, 0, 2162
-22.04, Anti-aircraft warfare systems, 0, 69
-22.04, MLRS, 0, 138
-22.04, UAV operational-tactical level, 0, 172
-22.04, aircraft, 0, 176
-22.04, artillery systems, 0, 397
+22.04, APV, 44, 2162
+22.04, Anti-aircraft warfare systems, 2, 69
+22.04, MLRS, 2, 138
+22.04, UAV operational-tactical level, 6, 172
+22.04, aircraft, 4, 176
+22.04, artillery systems, 4, 397
 22.04, cruise missiles, 0, 0
-22.04, helicopters, 0, 153
-22.04, personnel, 0, 21200
+22.04, helicopters, 2, 153
+22.04, personnel, 200, 21200
 22.04, special equipment, 0, 27
-22.04, tanks, 0, 838
+22.04, tanks, 9, 838
 22.04, vehicles and fuel tanks, 0, 4
 22.04, warships / boats, 0, 8
-23.04, APV, 0, 2205
+23.04, APV, 43, 2205
 23.04, Anti-aircraft warfare systems, 0, 69
-23.04, MLRS, 0, 143
-23.04, UAV operational-tactical level, 0, 182
-23.04, aircraft, 0, 177
-23.04, artillery systems, 0, 403
+23.04, MLRS, 5, 143
+23.04, UAV operational-tactical level, 10, 182
+23.04, aircraft, 1, 177
+23.04, artillery systems, 6, 403
 23.04, cruise missiles, 0, 0
-23.04, helicopters, 0, 154
-23.04, personnel, 0, 21600
+23.04, helicopters, 1, 154
+23.04, personnel, 400, 21600
 23.04, special equipment, 0, 27
-23.04, tanks, 0, 854
+23.04, tanks, 16, 854
 23.04, vehicles and fuel tanks, 0, 4
 23.04, warships / boats, 0, 8
-24.04, APV, 0, 2238
+24.04, APV, 33, 2238
 24.04, Anti-aircraft warfare systems, 0, 69
-24.04, MLRS, 0, 147
-24.04, UAV operational-tactical level, 0, 191
-24.04, aircraft, 0, 179
-24.04, artillery systems, 0, 408
+24.04, MLRS, 4, 147
+24.04, UAV operational-tactical level, 9, 191
+24.04, aircraft, 2, 179
+24.04, artillery systems, 5, 408
 24.04, cruise missiles, 0, 0
 24.04, helicopters, 0, 154
-24.04, personnel, 0, 21800
-24.04, special equipment, 0, 28
-24.04, tanks, 0, 873
+24.04, personnel, 200, 21800
+24.04, special equipment, 1, 28
+24.04, tanks, 19, 873
 24.04, vehicles and fuel tanks, 0, 4
 24.04, warships / boats, 0, 8
-25.04, APV, 0, 2258
+25.04, APV, 20, 2258
 25.04, Anti-aircraft warfare systems, 0, 69
-25.04, MLRS, 0, 149
-25.04, UAV operational-tactical level, 0, 201
-25.04, aircraft, 0, 181
-25.04, artillery systems, 0, 411
+25.04, MLRS, 2, 149
+25.04, UAV operational-tactical level, 10, 201
+25.04, aircraft, 2, 181
+25.04, artillery systems, 3, 411
 25.04, cruise missiles, 0, 0
 25.04, helicopters, 0, 154
-25.04, personnel, 0, 21900
+25.04, personnel, 100, 21900
 25.04, special equipment, 0, 28
-25.04, tanks, 0, 884
+25.04, tanks, 11, 884
 25.04, vehicles and fuel tanks, 0, 4
 25.04, warships / boats, 0, 8
 26.04, APV, 50, 2308
@@ -236,7 +236,7 @@ Date, Item, Delta, Total
 30.04, APV, 27, 2445
 30.04, Anti-aircraft warfare systems, 4, 77
 30.04, MLRS, 0, 151
-30.04, UAV operational-tactical level, 4, 232
+30.04, UAV operational-tactical level, 3, 232
 30.04, aircraft, 1, 190
 30.04, artillery systems, 1, 436
 30.04, cruise missiles, 0, 0
@@ -452,8 +452,21 @@ Date, Item, Delta, Total
 25.05, personnel, 100, 29450
 25.05, special equipment, 1, 44
 25.05, tanks, 3, 1305
-25.05, vehicles and fuel tanks, 5, 2217
+25.05, vehicles and fuel tanks, 4, 2217
 25.05, warships / boats, 0, 13
+26.05, APV, 22, 3235
+26.05, Anti-aircraft warfare systems, 0, 93
+26.05, MLRS, 0, 201
+26.05, UAV operational-tactical level, 11, 502
+26.05, aircraft, 0, 206
+26.05, artillery systems, 11, 617
+26.05, cruise missiles, 2, 114
+26.05, helicopters, 0, 170
+26.05, personnel, 150, 29600
+26.05, special equipment, 3, 47
+26.05, tanks, 10, 1315
+26.05, vehicles and fuel tanks, 8, 2225
+26.05, warships / boats, 0, 13
 27.05, APV, 11, 3246
 27.05, Anti-aircraft warfare systems, 0, 93
 27.05, MLRS, 0, 201
@@ -517,7 +530,7 @@ Date, Item, Delta, Total
 31.05, personnel, 150, 30500
 31.05, special equipment, 0, 48
 31.05, tanks, 9, 1358
-31.05, vehicles and fuel tanks, 11, 2275
+31.05, vehicles and fuel tanks, 17, 2275
 31.05, warships / boats, 0, 13
 01.06, APV, 41, 3343
 01.06, Anti-aircraft warfare systems, 1, 94
@@ -550,7 +563,7 @@ Date, Item, Delta, Total
 03.06, MLRS, 0, 207
 03.06, UAV operational-tactical level, 14, 535
 03.06, aircraft, 0, 210
-03.06, artillery systems, 14, 661
+03.06, artillery systems, 0, 661
 03.06, cruise missiles, 1, 121
 03.06, helicopters, 0, 175
 03.06, personnel, 100, 30950
@@ -558,6 +571,19 @@ Date, Item, Delta, Total
 03.06, tanks, 4, 1367
 03.06, vehicles and fuel tanks, 4, 2329
 03.06, warships / boats, 0, 13
+04.06, APV, 13, 3379
+04.06, Anti-aircraft warfare systems, 0, 95
+04.06, MLRS, 0, 207
+04.06, UAV operational-tactical level, 5, 540
+04.06, aircraft, 0, 210
+04.06, artillery systems, 19, 680
+04.06, cruise missiles, 1, 122
+04.06, helicopters, 0, 175
+04.06, personnel, 100, 31050
+04.06, special equipment, 1, 52
+04.06, tanks, 9, 1376
+04.06, vehicles and fuel tanks, 8, 2337
+04.06, warships / boats, 0, 13
 05.06, APV, 13, 3392
 05.06, Anti-aircraft warfare systems, 0, 95
 05.06, MLRS, 0, 207
@@ -584,6 +610,19 @@ Date, Item, Delta, Total
 13.06, tanks, 2, 1432
 13.06, vehicles and fuel tanks, 5, 2460
 13.06, warships / boats, 0, 13
+14.06, APV, 11, 3503
+14.06, Anti-aircraft warfare systems, 0, 97
+14.06, MLRS, 3, 229
+14.06, UAV operational-tactical level, 3, 588
+14.06, aircraft, 0, 213
+14.06, artillery systems, 3, 721
+14.06, cruise missiles, 0, 125
+14.06, helicopters, 0, 178
+14.06, personnel, 200, 32500
+14.06, special equipment, 0, 54
+14.06, tanks, 2, 1434
+14.06, vehicles and fuel tanks, 13, 2473
+14.06, warships / boats, 0, 13
 15.06, APV, 25, 3528
 15.06, Anti-aircraft warfare systems, 0, 97
 15.06, MLRS, 1, 230
@@ -597,6 +636,19 @@ Date, Item, Delta, Total
 15.06, tanks, 6, 1440
 15.06, vehicles and fuel tanks, 12, 2485
 15.06, warships / boats, 0, 13
+16.06, APV, 17, 3545
+16.06, Anti-aircraft warfare systems, 0, 97
+16.06, MLRS, 3, 233
+16.06, UAV operational-tactical level, 0, 591
+16.06, aircraft, 0, 213
+16.06, artillery systems, 7, 729
+16.06, cruise missiles, 0, 129
+16.06, helicopters, 0, 179
+16.06, personnel, 200, 32950
+16.06, special equipment, 0, 55
+16.06, tanks, 9, 1449
+16.06, vehicles and fuel tanks, 9, 2494
+16.06, warships / boats, 0, 13
 17.06, APV, 18, 3563
 17.06, Anti-aircraft warfare systems, 0, 97
 17.06, MLRS, 0, 233
@@ -610,6 +662,19 @@ Date, Item, Delta, Total
 17.06, tanks, 7, 1456
 17.06, vehicles and fuel tanks, 2, 2496
 17.06, warships / boats, 0, 13
+18.06, APV, 10, 3573
+18.06, Anti-aircraft warfare systems, 1, 98
+18.06, MLRS, 0, 233
+18.06, UAV operational-tactical level, 1, 594
+18.06, aircraft, 1, 216
+18.06, artillery systems, 5, 739
+18.06, cruise missiles, 0, 129
+18.06, helicopters, 0, 180
+18.06, personnel, 200, 33350
+18.06, special equipment, 0, 55
+18.06, tanks, 9, 1465
+18.06, vehicles and fuel tanks, 17, 2513
+18.06, warships / boats, 1, 14
 19.06, APV, 4, 3577
 19.06, Anti-aircraft warfare systems, 0, 98
 19.06, MLRS, 2, 235
@@ -623,6 +688,19 @@ Date, Item, Delta, Total
 19.06, tanks, 3, 1468
 19.06, vehicles and fuel tanks, 10, 2523
 19.06, warships / boats, 0, 14
+20.06, APV, 11, 3588
+20.06, Anti-aircraft warfare systems, 0, 98
+20.06, MLRS, 3, 238
+20.06, UAV operational-tactical level, 3, 601
+20.06, aircraft, 0, 216
+20.06, artillery systems, 4, 749
+20.06, cruise missiles, 0, 130
+20.06, helicopters, 0, 181
+20.06, personnel, 200, 33800
+20.06, special equipment, 0, 55
+20.06, tanks, 9, 1477
+20.06, vehicles and fuel tanks, 4, 2527
+20.06, warships / boats, 0, 14
 21.06, APV, 18, 3606
 21.06, Anti-aircraft warfare systems, 0, 98
 21.06, MLRS, 1, 239
@@ -636,6 +714,19 @@ Date, Item, Delta, Total
 21.06, tanks, 19, 1496
 21.06, vehicles and fuel tanks, 10, 2537
 21.06, warships / boats, 0, 14
+22.06, APV, 8, 3614
+22.06, Anti-aircraft warfare systems, 1, 99
+22.06, MLRS, 0, 239
+22.06, UAV operational-tactical level, 3, 614
+22.06, aircraft, 0, 216
+22.06, artillery systems, 0, 752
+22.06, cruise missiles, 0, 137
+22.06, helicopters, 1, 182
+22.06, personnel, 130, 34230
+22.06, special equipment, 1, 60
+22.06, tanks, 0, 1496
+22.06, vehicles and fuel tanks, 6, 2543
+22.06, warships / boats, 0, 14
 23.06, APV, 18, 3632
 23.06, Anti-aircraft warfare systems, 0, 99
 23.06, MLRS, 1, 240
@@ -649,6 +740,19 @@ Date, Item, Delta, Total
 23.06, tanks, 8, 1504
 23.06, vehicles and fuel tanks, 5, 2548
 23.06, warships / boats, 0, 14
+24.06, APV, 5, 3637
+24.06, Anti-aircraft warfare systems, 0, 99
+24.06, MLRS, 1, 241
+24.06, UAV operational-tactical level, 2, 622
+24.06, aircraft, 0, 216
+24.06, artillery systems, 3, 759
+24.06, cruise missiles, 0, 137
+24.06, helicopters, 0, 183
+24.06, personnel, 100, 34530
+24.06, special equipment, 0, 60
+24.06, tanks, 3, 1507
+24.06, vehicles and fuel tanks, 5, 2553
+24.06, warships / boats, 0, 14
 25.06, APV, 8, 3645
 25.06, Anti-aircraft warfare systems, 0, 99
 25.06, MLRS, 0, 241
@@ -662,6 +766,19 @@ Date, Item, Delta, Total
 25.06, tanks, 4, 1511
 25.06, vehicles and fuel tanks, 7, 2560
 25.06, warships / boats, 0, 14
+26.06, APV, 14, 3659
+26.06, Anti-aircraft warfare systems, 0, 99
+26.06, MLRS, 2, 243
+26.06, UAV operational-tactical level, 4, 630
+26.06, aircraft, 0, 217
+26.06, artillery systems, 0, 764
+26.06, cruise missiles, 2, 139
+26.06, helicopters, 0, 184
+26.06, personnel, 150, 34850
+26.06, special equipment, 0, 60
+26.06, tanks, 21, 1532
+26.06, vehicles and fuel tanks, 4, 2564
+26.06, warships / boats, 0, 14
 27.06, APV, 28, 3687
 27.06, Anti-aircraft warfare systems, 2, 101
 27.06, MLRS, 0, 243
@@ -675,6 +792,19 @@ Date, Item, Delta, Total
 27.06, tanks, 20, 1552
 27.06, vehicles and fuel tanks, 11, 2575
 27.06, warships / boats, 0, 14
+28.06, APV, 17, 3704
+28.06, Anti-aircraft warfare systems, 1, 102
+28.06, MLRS, 0, 243
+28.06, UAV operational-tactical level, 0, 636
+28.06, aircraft, 0, 217
+28.06, artillery systems, 7, 778
+28.06, cruise missiles, 0, 139
+28.06, helicopters, 1, 185
+28.06, personnel, 250, 35250
+28.06, special equipment, 1, 61
+28.06, tanks, 15, 1567
+28.06, vehicles and fuel tanks, 14, 2589
+28.06, warships / boats, 0, 14
 29.06, APV, 16, 3720
 29.06, Anti-aircraft warfare systems, 1, 103
 29.06, MLRS, 3, 246
@@ -688,6 +818,19 @@ Date, Item, Delta, Total
 29.06, tanks, 5, 1572
 29.06, vehicles and fuel tanks, 9, 2598
 29.06, warships / boats, 0, 14
+30.06, APV, 6, 3726
+30.06, Anti-aircraft warfare systems, 1, 104
+30.06, MLRS, 0, 246
+30.06, UAV operational-tactical level, 1, 641
+30.06, aircraft, 0, 217
+30.06, artillery systems, 9, 790
+30.06, cruise missiles, 1, 143
+30.06, helicopters, 0, 185
+30.06, personnel, 150, 35600
+30.06, special equipment, 0, 61
+30.06, tanks, 1, 1573
+30.06, vehicles and fuel tanks, 4, 2602
+30.06, warships / boats, 0, 14
 01.07, APV, 10, 3736
 01.07, Anti-aircraft warfare systems, 1, 105
 01.07, MLRS, 0, 246
@@ -701,6 +844,19 @@ Date, Item, Delta, Total
 01.07, tanks, 4, 1577
 01.07, vehicles and fuel tanks, 8, 2610
 01.07, warships / boats, 1, 15
+02.07, APV, 1, 3737
+02.07, Anti-aircraft warfare systems, 0, 105
+02.07, MLRS, 0, 246
+02.07, UAV operational-tactical level, 8, 653
+02.07, aircraft, 0, 217
+02.07, artillery systems, 4, 800
+02.07, cruise missiles, 1, 144
+02.07, helicopters, 0, 186
+02.07, personnel, 120, 35870
+02.07, special equipment, 0, 61
+02.07, tanks, 5, 1582
+02.07, vehicles and fuel tanks, 4, 2614
+02.07, warships / boats, 0, 15
 03.07, APV, 7, 3744
 03.07, Anti-aircraft warfare systems, 0, 105
 03.07, MLRS, 0, 246
@@ -714,6 +870,19 @@ Date, Item, Delta, Total
 03.07, tanks, 2, 1584
 03.07, vehicles and fuel tanks, 4, 2618
 03.07, warships / boats, 0, 15
+04.07, APV, 10, 3754
+04.07, Anti-aircraft warfare systems, 0, 105
+04.07, MLRS, 0, 246
+04.07, UAV operational-tactical level, 4, 658
+04.07, aircraft, 0, 217
+04.07, artillery systems, 3, 804
+04.07, cruise missiles, 0, 144
+04.07, helicopters, 0, 187
+04.07, personnel, 230, 36200
+04.07, special equipment, 1, 65
+04.07, tanks, 5, 1589
+04.07, vehicles and fuel tanks, 11, 2629
+04.07, warships / boats, 0, 15
 05.07, APV, 18, 3772
 05.07, Anti-aircraft warfare systems, 0, 105
 05.07, MLRS, 1, 247

@@ -2,6 +2,7 @@ use lib "lib";
 use Data::UkraineWar::MoD::Scrape;
 
 my $data = Data::UkraineWar::MoD::Scrape.new( "raw-pages" );
+$data.expand;
 
 task 'download', {
     shell "bin/scrape.py";
