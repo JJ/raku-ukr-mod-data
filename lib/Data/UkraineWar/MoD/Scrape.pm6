@@ -39,6 +39,7 @@ method dates() {
             })
 }
 
+#| convert date in the web format to a real date for arithmetic
 my sub datify( $date-key ) {
     Date.new(2022, |$date-key.split(".").reverse())
 }
