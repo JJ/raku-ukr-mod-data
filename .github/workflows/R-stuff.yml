@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - "**/*.csv"
+      - ".github/workflows/R-stuff.yml"
+      - "bin/plot-pairs.R"
 
 jobs:
   MDSpelling:
