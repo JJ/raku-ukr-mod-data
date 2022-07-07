@@ -22,9 +22,8 @@ jobs:
             any::GGally
             any::reshape2
           needs: check
-      - name: Run R tests
+      - name: Generate chart
         run: Rscript bin/plot-pairs.R
-      - uses: r-lib/actions/setup-pandoc@v2
       - name: Check in result
         run: |
           if [ -n "$(git status -s)" ]; then
