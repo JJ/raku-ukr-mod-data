@@ -7,7 +7,7 @@
   "authors": [
     "JJ Merelo"
   ],
-  "auth": "",
+  "auth": "zef:jjmerelo",
   "depends": [
     "Ake:ver<0.1.2+>"
   ],
@@ -24,11 +24,11 @@
   ],
   "license": "Artistic-2.0",
   "tags": [
-      "modules",
-      "template",
-      "test",
-      "data science",
-      "scraping"
+    "modules",
+    "template",
+    "test",
+    "data science",
+    "scraping"
   ],
   "source-url": ""
 }
