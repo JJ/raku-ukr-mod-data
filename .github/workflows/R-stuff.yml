@@ -1,4 +1,4 @@
-name: "Check README, text and R code"
+name: "Generate charts directly"
 
 on:
   push:
