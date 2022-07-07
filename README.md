@@ -33,14 +33,34 @@ and
 poetry install
 ```
 
+If you just want to use the Raku part yourself, use `zef` for installation:
+
+```shell
+zef install Data::UkraineWar::MoD
+```
+
 ## Running
 
 You can always check the examples in the `t` directory. For convenience, an
 [`Akefile`](Akefile) is also included. It contains several targets which automate some tasks
 
-- `ake CSV`: generates CSV file
+- `ake CSV`: generates CSV file in a fixed location
 - `ake download`: invokes the python script to download data
 - `ake prescrape`: check if there's some downloaded file that can't be scraped
+
+## Reference
+
+Not a lot of that, I'm afraid. There are two classes,
+[`Data::UkraineWar::MoD::Daily`](lib/Data/UkraineWar/MoD/Daily.pm6), which
+ will deal with content from a single webpage (updated daily-ish) and 
+ [`Data::UkraineWar::MoD::Scrape`](lib/Data/UkraineWar/MoD/Scrape.pm6) which
+  will look in a directory for all HTML pages and try to extract information
+   from them, or bail out if some page does not contain losses information.
+   
+## Issues
+
+ Please raise issues
+ [at the repo](https://github.com/JJ/raku-ukr-mod-data/issues).
 
 ## See also
 
