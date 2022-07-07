@@ -1,0 +1,15 @@
+Package: ukrmoddata
+Title: UKR Ministry of Defense data
+Version: 0.0.1
+Authors@R:
+    person("JJ", "Merelo", email="jmerelo@ugr.es", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-1385-9741 "))
+Description: Necessary packages to generate initial charts
+BugReports: https://github.com/JJ/raku-ukr-mod-data
+License: GPL3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
+Imports:
+	GGally,
+	reshape2
