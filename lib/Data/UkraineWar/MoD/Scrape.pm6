@@ -32,13 +32,20 @@ method new( $directory ) {
 
 method data() { %!data };
 
-method CSV() {
-    my $output = "Date, Item, Delta, Total\n";
-    for %!data
-            .keys()
+method dates() {
+    %!data.keys()
             .sort( {
                 $^a.split(".").reverse() cmp $^b.split(".").reverse()
-            }) -> $k {
+            })
+}
+
+method expand() {
+
+}
+
+method CSV() {
+    my $output = "Date, Item, Delta, Total\n";
+    for self.dates() -> $k {
         for  %!data{$k}.keys().sort() -> $dk {
             $output ~=
                     "$k, $dk, " ~ %!data{$k}{$dk}<delta total>.join(", ")  ~
