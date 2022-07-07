@@ -40,7 +40,8 @@ def download(day, month):
 
 
 def save_if_correct(content, day, month):
-    """ Save content to a file with pre-established name only if correct"""
+    """ Save content to a file with pre-established name only if correct,
+    that is, if it includes losses data"""
     filename = f'raw-pages/combat-losses-to-{day}.{month} |.html'
     print("💾 saving " + filename)
     if re.search(r"about\s+\d+", content):
