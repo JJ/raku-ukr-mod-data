@@ -4,7 +4,6 @@ on:
     paths:
       - 'raw-pages/*.html'
       - '.github/workflows/generate-new-CSV.yaml'
-
 jobs:
   test:
     runs-on: ubuntu-latest
