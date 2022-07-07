@@ -11,4 +11,9 @@ is( $csv-output.lines()[*-1].split(", ").elems, 4, "CSV rows correct");
 
 $war-data.expand();
 is( $war-data.data{"13.04"}<APV><delta>, 18, "Deltas added correctly");
+is( $war-data.data{"26.05"}<APV><delta>, 22,
+        "Deltas added correctly in intermediate dates");
+is( $war-data.data{"26.05"}<APV><total>, 3235,
+        "Totals added correctly in intermediate dates");
+
 done-testing;

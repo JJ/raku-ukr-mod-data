@@ -59,7 +59,13 @@ method expand() {
             my $intermediate-date = $this-date - 1;
             my $mid-date-key = sprintf("%02d",$intermediate-date.day) ~ "." ~
                     sprintf("%02d",$intermediate-date.month);
-            say $mid-date-key;
+            for %!data{$date}.keys -> $key {
+                %!data{$mid-date-key}{$key}<total> =
+                        %!data{$date}{$key}<total> - %!data{$date}{$key}<delta>;
+                %!data{$mid-date-key}{$key}<delta> =
+                        %!data{$mid-date-key}{$key}<total> -
+                        %!data{$prev-date}{$key}<total>;
+            }
         }
 
         $prev-date = $date;
