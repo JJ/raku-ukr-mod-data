@@ -3,7 +3,7 @@ name: "Generate charts directly"
 on:
   push:
     paths:
-      - "**/*.csv"
+      - "resources/ukr_mod_data.csv"
       - ".github/workflows/R-stuff.yml"
       - "bin/plot-pairs.R"
 
