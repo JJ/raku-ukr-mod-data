@@ -39,7 +39,24 @@ method dates() {
             })
 }
 
+my sub datify( $date-key ) {
+    Date.new(2022, |$date-key.split(".").reverse())
+}
+
 method expand() {
+    my $prev-date = self.dates[0];
+    for self.dates()[1..*] -> $date {
+        my $this-date = datify( $date );
+        if $this-date - datify($prev-date) == 1 {
+            unless [*] %!data{$date}.values.map: *<delta> {
+                for %!data{$date}.keys -> $key {
+                    %!data{$date}{$key}<delta> = %!data{$date}{$key}<total> -
+                            %!data{$prev-date}{$key}<total>
+                }
+            }
+        }
+        $prev-date = $date;
+    }
 
 }
 
