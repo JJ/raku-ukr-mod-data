@@ -55,6 +55,13 @@ method expand() {
                 }
             }
         }
+        if $this-date - datify($prev-date) == 2 {
+            my $intermediate-date = $this-date - 1;
+            my $mid-date-key = sprintf("%02d",$intermediate-date.day) ~ "." ~
+                    sprintf("%02d",$intermediate-date.month);
+            say $mid-date-key;
+        }
+
         $prev-date = $date;
     }
 
