@@ -5,7 +5,7 @@ on:
     paths:
       - "resources/ukr_mod_data.csv"
       - ".github/workflows/R-stuff.yml"
-      - "bin/plot-pairs.R"
+      - "tools/plot-pairs.R"
 
 jobs:
   MDSpelling:
@@ -23,12 +23,12 @@ jobs:
             any::reshape2
           needs: check
       - name: Generate chart
-        run: Rscript bin/plot-pairs.R
+        run: Rscript tools/plot-pairs.R
       - name: Check in result
         run: |
           if [ -n "$(git status -s)" ]; then
               export DATE=$(date +"%y-%m-%d")
-              bin/commit-push.sh "Re-generated CSV split files for $DATE"
+              tools/commit-push.sh "Re-generated CSV split files for $DATE"
               git tag -a data-shaped-$DATE -m "Tagging data for $(date)"
               git push --follow-tags
           else

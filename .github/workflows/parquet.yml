@@ -23,7 +23,7 @@ jobs:
         run: |
           if [ -n "$(git status -s)" ]; then
               export DATE=$(date +"%y-%m-%d")
-              bin/commit-push.sh "Re-generated parquet file for $DATE"
+              tools/commit-push.sh "Re-generated parquet file for $DATE"
               git tag -a data-$DATE -m "Tagging data for $(date)"
               git push --follow-tags
           else

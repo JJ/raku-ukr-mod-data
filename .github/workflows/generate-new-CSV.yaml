@@ -15,7 +15,7 @@ jobs:
       - name: Check in if there are changes
         run: |
           if [ -n "$(git status -s)" ]; then
-              bin/commit-push.sh "Re-generates CSV"
+              tools/commit-push.sh "Re-generates CSV"
               git push
           else
               echo "ℹ No changes in CSV"

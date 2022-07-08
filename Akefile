@@ -5,7 +5,7 @@ my $data = Data::UkraineWar::MoD::Scrape.new( "raw-pages" );
 $data.expand;
 
 task 'download', {
-    shell "bin/scrape.py";
+    shell "tools/scrape.py";
 }
 
 task 'prescrape', {

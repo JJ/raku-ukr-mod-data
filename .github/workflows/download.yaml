@@ -18,12 +18,12 @@ jobs:
       - name: Install rest of modules
         run: poetry install
       - name: Download today's report
-        run: poetry run bin/scrape.py
+        run: poetry run tools/scrape.py
       - name: Check in if new pages are available
         run: |
           if [ -n "$(git status -s)" ]; then
               git add raw-pages/*.html
-              bin/commit-push.sh "Downloads for $(date)"
+              tools/commit-push.sh "Downloads for $(date)"
               git push
           else
               echo "::warning::ℹ No new files"
