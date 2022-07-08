@@ -44,7 +44,7 @@ def save_if_correct(content, day, month):
     that is, if it includes losses data"""
     filename = f'raw-pages/combat-losses-to-{day}.{month} |.html'
     print("💾 saving " + filename)
-    if re.search(r"about\s+\d+", content):
+    if re.search(r"artillery\s+systems", content):
         with open(filename, "w", encoding='utf-8') as file:
             file.write(content)
     else:
