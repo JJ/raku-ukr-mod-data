@@ -36,9 +36,9 @@ def download(day, month):
     url = f'https://www.mil.gov.ua/en/news/2022/{month}/{day}/the-total-combat-losses-of-the-enemy-from-24-02-to-{day}-{month}/'
     print("⬇️ Download " + url)
     driver.get(url)
-    if (not driver.page_source):
+    if not driver.page_source:
         print("No source downloaded")
-        exit(1)
+        sys.exit(1)
     return driver.page_source
 
 
