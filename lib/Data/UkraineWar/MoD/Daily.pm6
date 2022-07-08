@@ -6,7 +6,8 @@ sub post-process( %data ) is export {
         %processed-data{"vehicles and fuel tanks"} = {
             total => %data{"fuel tanks"}<total> +
                     %data{"vehicles"}<total>,
-            delta => 0
+            delta => %data{"fuel tanks"}<delta> +
+                    %data{"vehicles"}<delta>
         };
 
         %processed-data{"fuel tanks"}:delete;
