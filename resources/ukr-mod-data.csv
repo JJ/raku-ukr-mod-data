@@ -10,7 +10,7 @@ Date, Item, Delta, Total
 12.04, personnel, 0, 19600
 12.04, special equipment, 0, 25
 12.04, tanks, 0, 732
-12.04, vehicles and fuel tanks, 0, 4
+12.04, vehicles and fuel tanks, 0, 1482
 12.04, warships / boats, 0, 7
 13.04, APV, 18, 1964
 13.04, Anti-aircraft warfare systems, 1, 64
@@ -23,7 +23,7 @@ Date, Item, Delta, Total
 13.04, personnel, 200, 19800
 13.04, special equipment, 0, 25
 13.04, tanks, 7, 739
-13.04, vehicles and fuel tanks, 0, 4
+13.04, vehicles and fuel tanks, 23, 1505
 13.04, warships / boats, 0, 7
 14.04, APV, 4, 1968
 14.04, Anti-aircraft warfare systems, 0, 64
@@ -36,7 +36,7 @@ Date, Item, Delta, Total
 14.04, personnel, 100, 19900
 14.04, special equipment, 0, 25
 14.04, tanks, 14, 753
-14.04, vehicles and fuel tanks, 0, 4
+14.04, vehicles and fuel tanks, 8, 1513
 14.04, warships / boats, 0, 7
 15.04, APV, 8, 1976
 15.04, Anti-aircraft warfare systems, 2, 66
@@ -49,7 +49,7 @@ Date, Item, Delta, Total
 15.04, personnel, 100, 20000
 15.04, special equipment, 0, 25
 15.04, tanks, 3, 756
-15.04, vehicles and fuel tanks, 0, 4
+15.04, vehicles and fuel tanks, 6, 1519
 15.04, warships / boats, 1, 8
 16.04, APV, 6, 1982
 16.04, Anti-aircraft warfare systems, 0, 66
@@ -62,7 +62,7 @@ Date, Item, Delta, Total
 16.04, personnel, 100, 20100
 16.04, special equipment, 1, 26
 16.04, tanks, 6, 762
-16.04, vehicles and fuel tanks, 0, 4
+16.04, vehicles and fuel tanks, 15, 1534
 16.04, warships / boats, 0, 8
 17.04, APV, 20, 2002
 17.04, Anti-aircraft warfare systems, 0, 66
@@ -75,7 +75,7 @@ Date, Item, Delta, Total
 17.04, personnel, 200, 20300
 17.04, special equipment, 1, 27
 17.04, tanks, 11, 773
-17.04, vehicles and fuel tanks, 0, 4
+17.04, vehicles and fuel tanks, 13, 1547
 17.04, warships / boats, 0, 8
 18.04, APV, 39, 2041
 18.04, Anti-aircraft warfare systems, 1, 67
@@ -88,7 +88,7 @@ Date, Item, Delta, Total
 18.04, personnel, 300, 20600
 18.04, special equipment, 0, 27
 18.04, tanks, 17, 790
-18.04, vehicles and fuel tanks, 0, 4
+18.04, vehicles and fuel tanks, 16, 1563
 18.04, warships / boats, 0, 8
 19.04, APV, 22, 2063
 19.04, Anti-aircraft warfare systems, 0, 67
@@ -101,7 +101,7 @@ Date, Item, Delta, Total
 19.04, personnel, 200, 20800
 19.04, special equipment, 0, 27
 19.04, tanks, 12, 802
-19.04, vehicles and fuel tanks, 0, 4
+19.04, vehicles and fuel tanks, 8, 1571
 19.04, warships / boats, 0, 8
 20.04, APV, 24, 2087
 20.04, Anti-aircraft warfare systems, 0, 67
@@ -114,7 +114,7 @@ Date, Item, Delta, Total
 20.04, personnel, 100, 20900
 20.04, special equipment, 0, 27
 20.04, tanks, 13, 815
-20.04, vehicles and fuel tanks, 0, 4
+20.04, vehicles and fuel tanks, 9, 1580
 20.04, warships / boats, 0, 8
 21.04, APV, 31, 2118
 21.04, Anti-aircraft warfare systems, 0, 67
@@ -127,7 +127,7 @@ Date, Item, Delta, Total
 21.04, personnel, 100, 21000
 21.04, special equipment, 0, 27
 21.04, tanks, 14, 829
-21.04, vehicles and fuel tanks, 0, 4
+21.04, vehicles and fuel tanks, 4, 1584
 21.04, warships / boats, 0, 8
 22.04, APV, 44, 2162
 22.04, Anti-aircraft warfare systems, 2, 69
@@ -140,7 +140,7 @@ Date, Item, Delta, Total
 22.04, personnel, 200, 21200
 22.04, special equipment, 0, 27
 22.04, tanks, 9, 838
-22.04, vehicles and fuel tanks, 0, 4
+22.04, vehicles and fuel tanks, 15, 1599
 22.04, warships / boats, 0, 8
 23.04, APV, 43, 2205
 23.04, Anti-aircraft warfare systems, 0, 69
@@ -153,7 +153,7 @@ Date, Item, Delta, Total
 23.04, personnel, 400, 21600
 23.04, special equipment, 0, 27
 23.04, tanks, 16, 854
-23.04, vehicles and fuel tanks, 0, 4
+23.04, vehicles and fuel tanks, 20, 1619
 23.04, warships / boats, 0, 8
 24.04, APV, 33, 2238
 24.04, Anti-aircraft warfare systems, 0, 69
@@ -166,7 +166,7 @@ Date, Item, Delta, Total
 24.04, personnel, 200, 21800
 24.04, special equipment, 1, 28
 24.04, tanks, 19, 873
-24.04, vehicles and fuel tanks, 0, 4
+24.04, vehicles and fuel tanks, 14, 1633
 24.04, warships / boats, 0, 8
 25.04, APV, 20, 2258
 25.04, Anti-aircraft warfare systems, 0, 69
@@ -179,7 +179,7 @@ Date, Item, Delta, Total
 25.04, personnel, 100, 21900
 25.04, special equipment, 0, 28
 25.04, tanks, 11, 884
-25.04, vehicles and fuel tanks, 0, 4
+25.04, vehicles and fuel tanks, 9, 1642
 25.04, warships / boats, 0, 8
 26.04, APV, 50, 2308
 26.04, Anti-aircraft warfare systems, 0, 69
@@ -192,7 +192,7 @@ Date, Item, Delta, Total
 26.04, personnel, 200, 22100
 26.04, special equipment, 3, 31
 26.04, tanks, 34, 918
-26.04, vehicles and fuel tanks, 0, 4
+26.04, vehicles and fuel tanks, 77, 1719
 26.04, warships / boats, 0, 8
 27.04, APV, 34, 2342
 27.04, Anti-aircraft warfare systems, 2, 71
@@ -205,7 +205,7 @@ Date, Item, Delta, Total
 27.04, personnel, 300, 22400
 27.04, special equipment, 0, 31
 27.04, tanks, 21, 939
-27.04, vehicles and fuel tanks, 0, 4
+27.04, vehicles and fuel tanks, 23, 1742
 27.04, warships / boats, 0, 8
 28.04, APV, 47, 2389
 28.04, Anti-aircraft warfare systems, 1, 72
@@ -218,7 +218,7 @@ Date, Item, Delta, Total
 28.04, personnel, 400, 22800
 28.04, special equipment, 0, 31
 28.04, tanks, 31, 970
-28.04, vehicles and fuel tanks, 0, 4
+28.04, vehicles and fuel tanks, 22, 1764
 28.04, warships / boats, 0, 8
 29.04, APV, 29, 2418
 29.04, Anti-aircraft warfare systems, 1, 73
@@ -231,7 +231,7 @@ Date, Item, Delta, Total
 29.04, personnel, 200, 23000
 29.04, special equipment, 0, 31
 29.04, tanks, 16, 986
-29.04, vehicles and fuel tanks, 0, 4
+29.04, vehicles and fuel tanks, 7, 1771
 29.04, warships / boats, 0, 8
 30.04, APV, 27, 2445
 30.04, Anti-aircraft warfare systems, 4, 77
@@ -244,7 +244,7 @@ Date, Item, Delta, Total
 30.04, personnel, 200, 23200
 30.04, special equipment, 1, 32
 30.04, tanks, 22, 1008
-30.04, vehicles and fuel tanks, 0, 4
+30.04, vehicles and fuel tanks, 6, 1777
 30.04, warships / boats, 0, 8
 10.05, APV, 44, 2808
 10.05, Anti-aircraft warfare systems, 0, 87
