@@ -7,7 +7,10 @@
 [![Test-create and publish Docker images](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/test-upload-ghcr.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/test-upload-ghcr.yaml)
 [![Downloads periodically](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/download.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/download.yaml)
 
-> This content also rendered at [the web](https://jj.github.io/raku-ukr-mod-data).
+> This content also rendered at [the
+> web](https://jj.github.io/raku-ukr-mod-data).
+
+![Evolution of tanks (y axis) and APVs (color)](assets/tank-apv-evolution.png)
 
 News about combat losses of the Russian invaders are periodically published
 by the [Ukraininan minister of Defense](https://www.mil.gov.ua/en/news/)
