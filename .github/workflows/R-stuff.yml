@@ -19,11 +19,6 @@ jobs:
       - uses: r-lib/actions/setup-r@v2
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: |
-            any::GGally
-            any::reshape2
-            any::arrow
-            any::dplyr
           needs: check
       - name: Generate chart
         run: Rscript tools/plot-pairs.R
