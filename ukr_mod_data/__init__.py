@@ -49,6 +49,7 @@ def save_if_correct(content, day, month):
             file.write(content)
     else:
         print(f'Download for {month}-{day} does not contain the required data')
+        print(content)
 
 
 def main(days) -> int:
