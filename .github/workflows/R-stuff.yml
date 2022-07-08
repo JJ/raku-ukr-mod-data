@@ -6,6 +6,7 @@ on:
       - "resources/ukr_mod_data.csv"
       - ".github/workflows/R-stuff.yml"
       - "tools/plot-pairs.R"
+      - "DESCRIPTION"
 
 jobs:
   MDSpelling:

@@ -16,7 +16,7 @@ delta.clean$` warships / boats` <- NULL
 delta.clean <- delta.clean %>% slice(2:n())
 delta.clean$Losses <- c((delta.clean %>% slice(2:n()))$` personnel`,0)
 png("assets/delta-correlation-plot.png", height = 2048, width = 2048)
-g <- ggpairs(delta.clean,columns=2:12, upper = list(continuous = wrap("cor", size = 14)) )
+g <- ggpairs(delta.clean,columns=2:13, upper = list(continuous = wrap("cor", size = 14)) )
 print(g)
 dev.off()
 write.csv(delta.clean, "resources/ukr-mod-deltas.csv")
