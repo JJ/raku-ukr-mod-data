@@ -21,7 +21,7 @@ if os.getenv('LOCAL_CHRPATH'):
         driver_executable_path=LOCAL_CHRPATH, headless=True
     )
 else:
-    print(f' [⚠️] Using default chromedriver')
+    print(' [⚠️] Using default chromedriver')
     driver = uc.Chrome(headless=True)
 
 
