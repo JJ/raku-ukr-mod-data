@@ -36,6 +36,9 @@ def download(day, month):
     url = f'https://www.mil.gov.ua/en/news/2022/{month}/{day}/the-total-combat-losses-of-the-enemy-from-24-02-to-{day}-{month}/'
     print("⬇️ Download " + url)
     driver.get(url)
+    if (not driver.page_source):
+        print("No source downloaded")
+        exit(1)
     return driver.page_source
 
 
@@ -44,7 +47,7 @@ def save_if_correct(content, day, month):
     that is, if it includes losses data"""
     filename = f'raw-pages/combat-losses-to-{day}.{month} |.html'
     print("💾 saving " + filename)
-    if re.search(r"artillery\s+systems", content):
+    if re.search(r"p>personnel", content):
         with open(filename, "w", encoding='utf-8') as file:
             file.write(content)
     else:
