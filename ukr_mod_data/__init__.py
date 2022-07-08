@@ -10,17 +10,18 @@ import os
 import re
 from datetime import date
 
-
 import undetected_chromedriver as uc
 
 LOCAL_CHRPATH = '/opt/google/chrome/chromedriver'
 # pylint: disable=invalid-name
 driver = None
 if os.getenv('LOCAL_CHRPATH'):
+    print(f" [⚠️] Using driver {LOCAL_CHRPATH}")
     driver = uc.Chrome(
         driver_executable_path=LOCAL_CHRPATH, headless=True
     )
 else:
+    print(f' [⚠️] Using default chromedriver')
     driver = uc.Chrome(headless=True)
 
 
