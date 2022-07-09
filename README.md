@@ -10,6 +10,29 @@
 > This content also rendered at [the
 > web](https://jj.github.io/raku-ukr-mod-data).
 
+## Docker containers
+
+Get the data locally:
+
+```
+docker run -p 31415:31415 ghcr.io/jj/ukr-mod-data:latest
+```
+
+and then
+
+```
+wget http://localhost:31415/ -o raw-data.csv
+wget http://localhost:31415/deltas -o deltas.csv
+```
+
+You can also use
+
+```shell
+docker run --rm -t -v `pwd`:/home/raku/test  ghcr.io/jj/ukr-mod-data-csv
+```
+
+## Introduction
+
 ![Evolution of tanks (y axis) and APVs (color)](assets/tank-apv-evolution.png)
 
 News about combat losses of the Russian invaders are periodically published
