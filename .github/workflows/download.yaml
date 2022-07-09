@@ -4,9 +4,6 @@ on:
     paths:
       - ".github/workflows/download.yaml"
 
-  schedule:
-    - cron: "0 23 * * *"
-
 jobs:
   download:
     runs-on: ubuntu-latest
