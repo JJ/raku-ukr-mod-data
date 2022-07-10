@@ -1,7 +1,7 @@
 {
   "name": "Data::UkraineWar::MoD",
-  "description": "Raku distribution template",
-  "version": "0.0.3",
+  "description": "Data from the Ukrainian MoD",
+  "version": "0.0.3.1",
   "perl": "6.d",
   "meta-version": 1,
   "authors": [
