@@ -5,7 +5,6 @@
 [![Generates parquet from the CSV file](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/parquet.yml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/parquet.yml)
 [![Scrape downloaded HTML when created and generate CSV](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/generate-new-CSV.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/generate-new-CSV.yaml)
 [![Test-create and publish Docker images](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/test-upload-ghcr.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/test-upload-ghcr.yaml)
-[![Downloads periodically](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/download.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/download.yaml)
 
 > This content also rendered at [the
 > web](https://jj.github.io/raku-ukr-mod-data).
