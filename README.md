@@ -4,7 +4,7 @@
 [![Tests python stuff](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/python.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/python.yaml)
 [![Generates parquet from the CSV file](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/parquet.yml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/parquet.yml)
 [![Scrape downloaded HTML when created and generate CSV](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/generate-new-CSV.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/generate-new-CSV.yaml)
-[![Test-create and publish Docker images](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/test-upload-ghcr.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/test-upload-ghcr.yaml)
+[![Test-create and publish Docker images](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/containers.yaml/badge.svg)](https://github.com/JJ/raku-ukr-mod-data/actions/workflows/containers.yaml)
 
 > This content also rendered at [the
 > web](https://jj.github.io/raku-ukr-mod-data).
