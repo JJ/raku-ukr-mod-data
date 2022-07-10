@@ -19,4 +19,17 @@ subtest "Expanding and processing works", {
     is($war-data.data{"26.05"}<APV><total>, 3235,
             "Totals added correctly in intermediate dates");
 }
+
+subtest "Data is OK", {
+    my @dates = $war-data.dates();
+    my %prev = $war-data.data{@dates.shift};
+    for @dates -> $date {
+        for <tanks personnel> -> $k {
+            cmp-ok $war-data.data{$date}{$k}<total>, ">=", %prev{$k}<total>,
+                    "$k for $date: {$war-data.data{$date}{$k}<total>} ≥ {%prev{$k}<total>}";
+        }
+        %prev = $war-data.data{$date};
+    }
+
+}
 done-testing;
