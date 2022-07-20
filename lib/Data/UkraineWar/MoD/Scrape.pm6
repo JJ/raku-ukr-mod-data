@@ -15,7 +15,7 @@ method new( $directory ) {
     for dir( $directory, test => { /\.html$/ }) -> $file {
         my $content = $file.slurp;
         if ( $content ~~ / "<p>APV"/ ) {
-            $file ~~ /$<date> = [\d+\.\d+] \s+ \|/;
+            $file ~~ /"to" [\s|"-"] $<date> = [\d+\.\d+] \s+ \|?/;
             my $daily = Data::UkraineWar::MoD::Daily.new( $content, ~$<date> );
             if !@columns {
                 @columns = $daily.columns();
