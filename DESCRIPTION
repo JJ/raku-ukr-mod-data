@@ -13,7 +13,8 @@ RoxygenNote: 7.2.0
 Imports:
 	GGally,
 	reshape2,
-        arrow,
-        dplyr,
-        ggplot2,
-        ggthemes
+  arrow,
+  dplyr,
+  ggplot2,
+  ggthemes,
+  factoextra

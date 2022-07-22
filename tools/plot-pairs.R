@@ -30,8 +30,9 @@ write.csv(delta.clean, "resources/ukr-mod-deltas.csv")
 write_parquet(delta.clean, "resources/ukr-mod-deltas.parquet")
 write_feather(delta.clean, "resources/ukr-mod-deltas.feather")
 
-dates <- delta.clean$Date
-delta.clean$Date <- NULL
-delta.scaled <- scale( delta.clean)
-delta.scaled$Date <- dates
+scaled.columns <- names(delta.clean)[2:12]
+delta.scaled <- delta.clean %>% mutate_at(scaled.columns, ~(scale(.) %>% as.vector))
+delta.scaled$Losses <- NULL
+row.names(delta.scaled) <- delta.scaled$Date
+delta.scaled$Date <- NULL
 write.csv(delta.scaled, "resources/ukr-mod-deltas-scaled.csv")
