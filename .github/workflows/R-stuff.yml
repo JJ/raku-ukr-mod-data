@@ -1,4 +1,4 @@
-name: "Generate charts directly"
+name: "Generate charts, deltas and packaged"
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - "DESCRIPTION"
 
 jobs:
-  MDSpelling:
+  generate-charts:
     runs-on: ubuntu-latest
 
     steps:
