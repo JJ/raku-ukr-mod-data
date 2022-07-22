@@ -17,3 +17,5 @@ __pycache__
 # R
 .RData
 .Rhistory
+
+Rplots.pdf
