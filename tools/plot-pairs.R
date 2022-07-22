@@ -4,6 +4,7 @@ library(dplyr)
 library(arrow)
 library(ggplot2)
 library(ggthemes)
+library(factoextra)
 
 data = read.csv("resources/ukr-mod-data.csv")
 data.totals <- subset( data, select=-c(Delta))
@@ -36,3 +37,7 @@ delta.scaled$Losses <- NULL
 row.names(delta.scaled) <- delta.scaled$Date
 delta.scaled$Date <- NULL
 write.csv(delta.scaled, "resources/ukr-mod-deltas-scaled.csv")
+kclust <- kmeans(delta.scaled,2)
+png("assets/delta-clusters.png", height = 2048, width = 2048)
+fviz_cluster(kclust,data=delta.scaled)
+dev.off()
