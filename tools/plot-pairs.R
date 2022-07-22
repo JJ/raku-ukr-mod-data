@@ -29,3 +29,9 @@ ggsave("assets/apv-personnel-tank-correlation.png")
 write.csv(delta.clean, "resources/ukr-mod-deltas.csv")
 write_parquet(delta.clean, "resources/ukr-mod-deltas.parquet")
 write_feather(delta.clean, "resources/ukr-mod-deltas.feather")
+
+dates <- delta.clean$Date
+delta.clean$Date <- NULL
+delta.scaled <- scale( delta.clean)
+delta.scaled$Date <- dates
+write.csv(delta.scaled, "resources/ukr-mod-deltas-scaled.csv")
