@@ -10,9 +10,12 @@ License: GPL3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.0
+Depends:
+    R (>= 4)
+OS: Linux
 Imports:
-	GGally,
-	reshape2,
+  GGally,
+  reshape2,
   arrow,
   dplyr,
   ggplot2,
