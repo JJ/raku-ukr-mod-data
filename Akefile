@@ -19,7 +19,7 @@ task 'preRdeps', {
 }
 
 task 'Rdeps', {
-      shell "Rscript -e 'devtools.install_deps'";
+      shell "Rscript -e 'devtools.install_deps(dependencies=TRUE)'";
 }
 
 task 'CSV' => <prescrape>, {
