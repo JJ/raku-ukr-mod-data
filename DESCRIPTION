@@ -14,6 +14,7 @@ Depends:
     R (>= 4)
 OS: Linux
 Imports:
+  devtools,
   GGally,
   reshape2,
   arrow,
