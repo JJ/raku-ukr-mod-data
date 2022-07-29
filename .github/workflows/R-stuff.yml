@@ -3,7 +3,7 @@ name: "Generate charts, deltas and packaged"
 on:
   push:
     paths:
-      - "resources/ukr-mod-data.csv"
+      - "resources/*.csv"
       - ".github/workflows/R-stuff.yml"
       - "tools/plot-pairs.R"
       - "DESCRIPTION"
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - uses: r-lib/actions/setup-r@v2
