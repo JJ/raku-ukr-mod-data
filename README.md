@@ -11,7 +11,7 @@
 
 ## Docker containers
 
-Get the data locally:
+Get the latest version of the data locally:
 
 ```
 docker run -p 31415:31415 ghcr.io/jj/ukr-mod-data:latest

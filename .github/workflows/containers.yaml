@@ -6,6 +6,8 @@ on:
       - Dockerfile
       - data.Dockerfile
       - .github/workflows/containers.yaml
+      - resources/*
+      - lib/*
 
 env:
   REGISTRY: ghcr.io
