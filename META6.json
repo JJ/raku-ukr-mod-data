@@ -1,7 +1,7 @@
 {
   "name": "Data::UkraineWar::MoD",
   "description": "Data from the Ukrainian MoD",
-  "version": "0.0.3.1",
+  "version": "0.0.4",
   "perl": "6.d",
   "meta-version": 1,
   "authors": [
@@ -20,11 +20,11 @@
     "Data::UkraineWar::MoD::Scrape": "lib/Data/UkraineWar/MoD/Scrape.pm6"
   },
   "resources": [
-      "ukr-mod-data.csv",
-      "ukr-mod-deltas.csv",
-      "ukr-mod-data.parquet",
-      "ukr-mod-deltas.parquet",
-      "ukr-mod-deltas.feather"
+    "ukr-mod-data.csv",
+    "ukr-mod-deltas.csv",
+    "ukr-mod-data.parquet",
+    "ukr-mod-deltas.parquet",
+    "ukr-mod-deltas.feather"
   ],
   "license": "Artistic-2.0",
   "tags": [
