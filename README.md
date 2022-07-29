@@ -9,6 +9,11 @@
 > This content also rendered at [the
 > web](https://jj.github.io/raku-ukr-mod-data).
 
+
+This is mainly code to extract information from the reports on Russian invader
+losses published by the Ukrainian ministry of Defense, as well as extracted and
+processed data.
+
 ## Docker containers
 
 Get the latest version of the data locally:
