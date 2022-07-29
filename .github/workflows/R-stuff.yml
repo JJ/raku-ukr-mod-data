@@ -8,6 +8,9 @@ on:
       - "tools/plot-pairs.R"
       - "DESCRIPTION"
 
+  schedule:
+    - cron: '31 20 * * *'
+
 jobs:
   generate-charts:
     runs-on: ubuntu-latest

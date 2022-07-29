@@ -5,6 +5,9 @@ on:
       - "resources/*.csv"
       - ".github/workflows/parquet.yml"
 
+  schedule:
+    - cron: '31 23 * * *'
+
 jobs:
   generate_parquet:
     runs-on: ubuntu-latest
