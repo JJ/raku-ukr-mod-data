@@ -32,7 +32,7 @@ sub scrape( @lines ) is export {
     for @losses-lines.grep: /"‒"|"–"|"-"/ -> $l {
         my $match = $l ~~ /'p>'
             $<concept> = [ .+ ] \s+ ['‒'|'–'|'-'] \s* "about"? \s*
-            $<total> = [\d+]
+            $<total> = [\d*]
             \s* [\( "+"]?
             $<delta> = [[\d+]]? /;
         warn " ⚠️ «$l» can't be properly parsed" unless $match{'concept'};
