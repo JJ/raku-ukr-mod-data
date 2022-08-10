@@ -12,7 +12,9 @@ method new( $directory ) {
     my %data;
     my @invalid;
     my @columns;
-    for dir( $directory, test => { /\.html$/ }) -> $file {
+    for dir( $directory, test => { /[\.html$ | ^"The total combat"]/ }) ->
+    $file {
+        say $file;
         my $content = $file.slurp;
         if ( $content ~~ / "<p>APV"/ ) {
             $file ~~ /"to" [\s|"-"] $<date> = [\d+\.\d+] \s+ \|?/;
