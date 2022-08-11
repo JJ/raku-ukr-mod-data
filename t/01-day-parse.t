@@ -5,14 +5,15 @@ use Data::UkraineWar::MoD::Daily;
 constant $data-file = "data/example.html";
 my $path = $data-file.IO.e ?? "" !! "t/";
 
-my @helicopters = [175, 186, 170, 140, 155, 193];
-my @uavs = [8,4,11,0,4,3];
-my @APVs = [3392, 3736,3213,1946,2445,4076];
-my @fuel-tanks = [2360,2610,2217,1482,1777, 2998];
-my @personnel = [31150,35750,29450,19600,23200,42640];
+my @helicopters = [175, 186, 170, 140, 155, 193, 191];
+my @uavs = [8,4,11,0,4,3,1];
+my @APVs = [3392, 3736,3213,1946,2445,4076, 4022];
+my @fuel-tanks = [2360,2610,2217,1482,1777, 2998, 2922];
+my @personnel = [31150,35750,29450,19600,23200,42640, 41350];
 for ( $data-file, "data/july-1.html",
       "data/may-25-05.html", "data/first.html",
-      "data/april-30-04.html", "data/aug-09.html") -> $uri {
+      "data/april-30-04.html", "data/aug-09.html",
+"data/aug-03.html") -> $uri {
     my $daily = Data::UkraineWar::MoD::Daily.new("$path$uri");
     diag("Testing $uri");
     ok($daily, "Loads daily file from test data");
