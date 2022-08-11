@@ -14,7 +14,6 @@ method new( $directory ) {
     my @columns;
     for dir( $directory, test => { /[\.html$ | ^"The total combat"]/ }) ->
     $file {
-        say $file;
         my $content = $file.slurp;
         if ( $content ~~ / "<p>APV"/ ) {
             $file ~~ /"to" [\s|"-"] $<date> = [\d+\.\d+] \s+ \|?/;
@@ -57,6 +56,7 @@ method expand() {
         if $this-date - datify($prev-date) == 1 {
             unless [*] %!data{$date}.values.map: *<delta> {
                 for %!data{$date}.keys -> $key {
+                    next unless %!data{$prev-date}{$key}<total>;
                     %!data{$date}{$key}<delta> = %!data{$date}{$key}<total> -
                             %!data{$prev-date}{$key}<total>
                 }
