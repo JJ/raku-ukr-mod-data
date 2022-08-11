@@ -21,8 +21,12 @@ method new( $directory ) {
             my $daily = Data::UkraineWar::MoD::Daily.new( $content, ~$<date> );
             if !@columns {
                 @columns = $daily.columns();
-            } elsif @columns.join(".") ne $daily.columns().join(".") {
-                return Failure.new("Unknown columns: \n{@columns.join(".")}\n{$daily.columns().join(".")}");
+            } elsif $daily.columns() ⊈ @columns {
+                say @columns.raku;
+                say $daily.columns().raku;
+                return Failure.new("Unknown or missing columns in «$file» \n{
+                    @columns.join(".")}\n{$daily.columns().join(".")
+                }");
             }
             %data{~$<date>} = $daily.data;
         } else {

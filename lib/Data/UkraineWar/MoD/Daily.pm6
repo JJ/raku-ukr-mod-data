@@ -19,6 +19,11 @@ sub post-process( %data ) is export {
         %processed-data{"boats / cutters"}:delete;
     }
 
+    if %data{"особового складу / personnel"}  {
+        %processed-data{"personnel"} = %data{"особового складу / personnel"};
+        %processed-data{"особового складу / personnel"}:delete;
+    }
+
     %processed-data{"cruise missiles"} = { :0total, :0delta } unless
       %processed-data{"cruise missiles"};
 
