@@ -2,6 +2,7 @@ use Test;
 
 use Data::UkraineWar::MoD::Scrape;
 
+#| Fixture with the raw data set scraped from pages
 my $war-data = Data::UkraineWar::MoD::Scrape.new( "raw-pages/" );
 
 subtest "CSV works", {
