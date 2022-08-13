@@ -2,7 +2,7 @@ name: "Scrape downloaded HTML when created and generate CSV"
 on:
   push:
     paths:
-      - 'raw-pages/*.html'
+      - 'raw-pages/*'
       - '.github/workflows/generate-new-CSV.yaml'
 jobs:
   test:
