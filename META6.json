@@ -1,7 +1,7 @@
 {
   "name": "Data::UkraineWar::MoD",
   "description": "Data from the Ukrainian MoD",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "perl": "6.d",
   "meta-version": 1,
   "authors": [
@@ -24,7 +24,8 @@
     "ukr-mod-deltas.csv",
     "ukr-mod-data.parquet",
     "ukr-mod-deltas.parquet",
-    "ukr-mod-deltas.feather"
+    "ukr-mod-deltas.feather",
+    "ukr-mod-deltas-scaled.csv"
   ],
   "license": "Artistic-2.0",
   "tags": [
