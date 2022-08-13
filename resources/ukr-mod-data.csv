@@ -1026,3 +1026,159 @@ Date, Item, Delta, Total
 28.07, tanks, 4, 1742
 28.07, vehicles and fuel tanks, 7, 2854
 28.07, warships / boats, 0, 15
+29.07, APV, 8, 3987
+29.07, Anti-aircraft warfare systems, 0, 117
+29.07, MLRS, 0, 258
+29.07, UAV operational-tactical level, 2, 731
+29.07, aircraft, 0, 222
+29.07, artillery systems, 6, 900
+29.07, cruise missiles, 0, 174
+29.07, helicopters, 0, 190
+29.07, personnel, 270, 40500
+29.07, special equipment, 2, 77
+29.07, tanks, 7, 1749
+29.07, vehicles and fuel tanks, 16, 2870
+29.07, warships / boats, 0, 15
+30.07, APV, 8, 3995
+30.07, Anti-aircraft warfare systems, 0, 117
+30.07, MLRS, 0, 258
+30.07, UAV operational-tactical level, 2, 733
+30.07, aircraft, 0, 222
+30.07, artillery systems, 6, 906
+30.07, cruise missiles, 0, 174
+30.07, helicopters, 0, 190
+30.07, personnel, 170, 40670
+30.07, special equipment, 1, 78
+30.07, tanks, 10, 1759
+30.07, vehicles and fuel tanks, 19, 2889
+30.07, warships / boats, 0, 15
+31.07, APV, 9, 4004
+31.07, Anti-aircraft warfare systems, 0, 117
+31.07, MLRS, 1, 259
+31.07, UAV operational-tactical level, 2, 735
+31.07, aircraft, 1, 223
+31.07, artillery systems, 10, 916
+31.07, cruise missiles, 0, 174
+31.07, helicopters, 0, 190
+31.07, personnel, 160, 40830
+31.07, special equipment, 0, 82
+31.07, tanks, 4, 1763
+31.07, vehicles and fuel tanks, 0, 2912
+31.07, warships / boats, 0, 15
+01.08, APV, 7, 4011
+01.08, Anti-aircraft warfare systems, 0, 117
+01.08, MLRS, 0, 259
+01.08, UAV operational-tactical level, 1, 736
+01.08, aircraft, 0, 223
+01.08, artillery systems, 16, 932
+01.08, cruise missiles, 0, 174
+01.08, helicopters, 0, 190
+01.08, personnel, 200, 41030
+01.08, special equipment, 0, 82
+01.08, tanks, 5, 1768
+01.08, vehicles and fuel tanks, 0, 2912
+01.08, warships / boats, 0, 15
+02.08, APV, 3, 4014
+02.08, Anti-aircraft warfare systems, 0, 117
+02.08, MLRS, 0, 259
+02.08, UAV operational-tactical level, 3, 739
+02.08, aircraft, 0, 223
+02.08, artillery systems, 4, 936
+02.08, cruise missiles, 0, 174
+02.08, helicopters, 1, 191
+02.08, personnel, 140, 41170
+02.08, special equipment, 0, 82
+02.08, tanks, 0, 1768
+02.08, vehicles and fuel tanks, 2, 2914
+02.08, warships / boats, 0, 15
+03.08, APV, 8, 4022
+03.08, Anti-aircraft warfare systems, 1, 118
+03.08, MLRS, 0, 259
+03.08, UAV operational-tactical level, 1, 740
+03.08, aircraft, 0, 223
+03.08, artillery systems, 3, 939
+03.08, cruise missiles, 6, 180
+03.08, helicopters, 0, 191
+03.08, personnel, 180, 41350
+03.08, special equipment, 1, 83
+03.08, tanks, 6, 1774
+03.08, vehicles and fuel tanks, 8, 2922
+03.08, warships / boats, 0, 15
+04.08, APV, 4, 4026
+04.08, Anti-aircraft warfare systems, 0, 118
+04.08, MLRS, 1, 260
+04.08, UAV operational-tactical level, 2, 742
+04.08, aircraft, 0, 223
+04.08, artillery systems, 7, 946
+04.08, cruise missiles, 2, 182
+04.08, helicopters, 0, 191
+04.08, personnel, 150, 41500
+04.08, special equipment, 0, 83
+04.08, tanks, 15, 1789
+04.08, vehicles and fuel tanks, 38, 2960
+04.08, warships / boats, 0, 15
+05.08, APV, 6, 4032
+05.08, Anti-aircraft warfare systems, 5, 123
+05.08, MLRS, 0, 260
+05.08, UAV operational-tactical level, 0, 742
+05.08, aircraft, 0, 223
+05.08, artillery systems, 4, 950
+05.08, cruise missiles, 0, 182
+05.08, helicopters, 0, 191
+05.08, personnel, 150, 41650
+05.08, special equipment, 0, 83
+05.08, tanks, 3, 1792
+05.08, vehicles and fuel tanks, 4, 2964
+05.08, warships / boats, 0, 15
+06.08, APV, 19, 4051
+06.08, Anti-aircraft warfare systems, 4, 127
+06.08, MLRS, 0, 260
+06.08, UAV operational-tactical level, 2, 744
+06.08, aircraft, 0, 223
+06.08, artillery systems, 5, 955
+06.08, cruise missiles, 0, 182
+06.08, helicopters, 0, 191
+06.08, personnel, 250, 41900
+06.08, special equipment, 2, 85
+06.08, tanks, 10, 1802
+06.08, vehicles and fuel tanks, 6, 2970
+06.08, warships / boats, 0, 15
+07.08, APV, 4, 4055
+07.08, Anti-aircraft warfare systems, 5, 132
+07.08, MLRS, 0, 260
+07.08, UAV operational-tactical level, 6, 750
+07.08, aircraft, 0, 223
+07.08, artillery systems, 3, 958
+07.08, cruise missiles, 0, 182
+07.08, helicopters, 0, 191
+07.08, personnel, 300, 42200
+07.08, special equipment, 1, 86
+07.08, tanks, 3, 1805
+07.08, vehicles and fuel tanks, 8, 2978
+07.08, warships / boats, 0, 15
+08.08, APV, 15, 4070
+08.08, Anti-aircraft warfare systems, 0, 132
+08.08, MLRS, 1, 261
+08.08, UAV operational-tactical level, 4, 754
+08.08, aircraft, 0, 223
+08.08, artillery systems, 2, 960
+08.08, cruise missiles, 0, 182
+08.08, helicopters, 1, 192
+08.08, personnel, 140, 42340
+08.08, special equipment, 0, 86
+08.08, tanks, 6, 1811
+08.08, vehicles and fuel tanks, 15, 2993
+08.08, warships / boats, 0, 15
+09.08, APV, 6, 4076
+09.08, Anti-aircraft warfare systems, 1, 133
+09.08, MLRS, 0, 261
+09.08, UAV operational-tactical level, 3, 757
+09.08, aircraft, 0, 223
+09.08, artillery systems, 4, 964
+09.08, cruise missiles, 3, 185
+09.08, helicopters, 1, 193
+09.08, personnel, 300, 42640
+09.08, special equipment, 1, 87
+09.08, tanks, 6, 1817
+09.08, vehicles and fuel tanks, 5, 2998
+09.08, warships / boats, 0, 15

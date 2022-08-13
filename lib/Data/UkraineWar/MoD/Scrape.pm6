@@ -57,7 +57,10 @@ method expand() {
             unless [*] %!data{$date}.values.map: *<delta> {
                 for %!data{$date}.keys -> $key {
                     if ! %!data{$prev-date}{$key}<total> {
-                        %!data{$prev-date}{$key}<total> = %!data{$date}{$key}<total>
+                        %!data{$prev-date}{$key}<total> =
+                                %!data{$date}{$key}<total>;
+                        %!data{$prev-date}{$key}<delta> = 0;
+
                     }
                     %!data{$date}{$key}<delta> = %!data{$date}{$key}<total> -
                             %!data{$prev-date}{$key}<total>
