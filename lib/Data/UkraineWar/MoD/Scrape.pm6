@@ -56,7 +56,9 @@ method expand() {
         if $this-date - datify($prev-date) == 1 {
             unless [*] %!data{$date}.values.map: *<delta> {
                 for %!data{$date}.keys -> $key {
-                    next unless %!data{$prev-date}{$key}<total>;
+                    if ! %!data{$prev-date}{$key}<total> {
+                        %!data{$prev-date}{$key}<total> = %!data{$date}{$key}<total>
+                    }
                     %!data{$date}{$key}<delta> = %!data{$date}{$key}<total> -
                             %!data{$prev-date}{$key}<total>
                 }
