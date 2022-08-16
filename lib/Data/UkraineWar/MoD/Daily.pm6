@@ -36,7 +36,7 @@ sub scrape( @lines ) is export {
     my %data;
     for @losses-lines.grep: /"‒"|"–"|"-"/ -> $l {
         my $match;
-        if $l ~~ /"&nbsp;"/ {
+        if $l ~~ /"&nbsp;about"/ {
             $match = $l ~~ /'p>'
             $<concept> = [.+] "‒ &nbsp;about" \h+
             $<total> = [\d*]
